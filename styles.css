@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Anuphan', sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+nav {
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li {
+	display: inline-block;
+}
+
+navbar-brand{
+    color:darkgreen;
+    font-size: larger;
+
+}
