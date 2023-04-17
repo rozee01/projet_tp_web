@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+}
+body {
+	font-family: 'Rubik', sans-serif;
+	background-color: #f6f8fa;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #d1d5da;
+	border-radius: 3px;
+}
+
+h1 {
+	font-size: 28px;
+	margin-top: 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	border: 1px solid #d1d5da;
+}
+
+button {
+	background-color: #195108;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #195108;
+}
+
+a {
+	color: #1494ab;
+	text-decoration: none;
+}
+body {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-image: url('/pics/tour.png');
+	background-size: auto;
+	background-position: center;
+    background-repeat: repeat;
+	border: 1px solid #d1d5da;
+	border-radius: 4px;
+}
