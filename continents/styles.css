@@ -5,7 +5,6 @@
     font-family: 'rubik', sans-serif;
 	scroll-behavior: smooth;
 }
-
 /*navbar start */
 .navbar-nav{
 	margin-left:200px;
@@ -32,41 +31,53 @@
 
 
 }
-/*navbar end */
 
-/*Home section start */
-.home{
-
-	width:100%;
-	height: 90vh;
-	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(pics/p2.jpg);
-    background-repeat:no-repeat;
-	background-size:cover;
+/*top destinations*/
+.destination-box {
+    margin-top: 10px;
 }
-.home .content {
-	text-align:center;
-	padding-top:200px;
-	font-size: 20px;
-	color:cornsilk;
-	margin-bottom: 30px;
-	text-shadow : 0px 1px 1px black;
+destination-box{
+    cursor:pointer;
 }
-#welcome{
-text-shadow: 0px 1px 1px black;
-font-size: 40px;
-color:#195108;
-font-weight: bold;
-margin-top: 5px;
+.img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+    width: 80%;
+    transition: .2s linear;
+   
+}
+ .img-fluid:hover{
+    transform:scale(1.1);
+   
+}
+.destination-box h3 {
+    margin-top: 20px;
 }
 
-/*continents*/
-.content h1{
-	font-weight: bold;
-    margin-top: 25px;
-	text-align:center;
-	color:#d9dec2;
-	text-shadow: 0px 1px 1px#195108;
+.destination-box p {
+    margin-bottom: 0;
+    margin-top:10px;
 }
+
+.container{
+    padding-top:50px; 
+    
+}
+.container h1{
+    font-size:16 px;
+	font-weight:700;
+	letter-spacing:2px;
+	color: #195108;
+	text-shadow: 0px 2px 2px #ffffff;
+    font-size:3rem;
+}
+.row{
+    padding-top:50px;
+}
+
+
+
+
 
 /*footer*/
 #footer{
@@ -97,4 +108,3 @@ margin-top: 5px;
 .social-links i:hover{
 	background:#EC9BAF;
 }
-
