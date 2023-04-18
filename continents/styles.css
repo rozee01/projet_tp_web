@@ -40,7 +40,7 @@ destination-box{
     cursor:pointer;
 }
 .img-fluid {
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     width: 80%;
     transition: .2s linear;
