@@ -5,7 +5,6 @@
     font-family: 'rubik', sans-serif;
 	scroll-behavior: smooth;
 }
-
 /*navbar start */
 .navbar-nav{
 	margin-left:200px;
@@ -63,14 +62,20 @@ margin-top: 5px;
 }
 
 /*continents*/
-.content h1{
+.continent h1{
 	font-weight: bold;
     margin-top: 25px;
 	text-align:center;
 	color:#d9dec2;
 	text-shadow: 0px 1px 1px#195108;
 }
-
+path:hover{
+	fill: #C9E2C2;
+}
+/*continent map*/
+.continent{
+	text-align: center;
+}
 /*footer*/
 #footer{
 	width:100%;

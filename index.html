@@ -47,9 +47,14 @@
 
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#TravelAdvice">Travel Advice</a>
-         
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Travel Advice</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Safety tips</a></li>
+            <li><a class="dropdown-item" href="#">Packing tips</a></li>
+            <li><a class="dropdown-item" href="#">Budget tips</a></li>
+          </ul>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="#AboutUs">About Us</a>
         </li>
@@ -79,7 +84,7 @@
 
 
 <!--Section continent starts-->
-<div class="content">
+<div class="continent ">
   <h1 class="heading title">Click on the continent you want to discover </h1>
   <div id="map">
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +119,7 @@ l64 7 0 -36 c0 -44 -18 -84 -41 -91 -15 -5 -16 -10 -7 -31 12 -26 24 -31 31
 -115 47 -45 80 -65 91 -53 13 12 -9 74 -37 104 -37 41 -38 60 -2 68 92 19 132
 55 119 106 -14 53 -22 55 -234 62 -109 4 -234 11 -278 17 -44 5 -190 16 -325
 24 -247 14 -292 22 -385 68 -39 19 -108 26 -170 16z"/></a>
-<a href="continents/dest_amn.html"> <path class="amn"d="M1395 3570 c-13 -22 -106 -60 -147 -61 -24 0 -70 4 -103 11 -39 8
+<a href="continents/dest_amn.html"> <path class="continent_map" name="amn" d="M1395 3570 c-13 -22 -106 -60 -147 -61 -24 0 -70 4 -103 11 -39 8
 -105 10 -192 6 -122 -6 -137 -5 -220 20 -78 23 -99 25 -181 19 -103 -7 -92 -2
 -255 -123 -104 -78 -130 -108 -125 -143 6 -42 32 -46 90 -15 144 78 147 79
 222 74 39 -3 83 -11 97 -18 39 -18 69 -78 69 -139 0 -48 -4 -57 -54 -118 -73
@@ -201,16 +206,7 @@ l64 7 0 -36 c0 -44 -18 -84 -41 -91 -15 -5 -16 -10 -7 -31 12 -26 24 -31 31
 
 
 
- <script type="text/javascript">
-  var nav = document.querySelector('nav');
-
-  window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 100) {
-      nav.classList.add('bg-dark', 'shadow');
-    } else {
-      nav.classList.remove('bg-dark', 'shadow');
-    }
-  });
+ <script type="text/javascript" src="index.js">
 </script>
 
 
