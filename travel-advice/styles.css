@@ -103,4 +103,6 @@ font-size: 20px;
 .social-links i:hover{
 	background:#EC9BAF;
 }
-
+.no-decoration {
+	text-decoration: none;
+  }
