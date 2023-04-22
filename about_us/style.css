@@ -5,47 +5,20 @@
   font-family: var(--bs-body-font-family);
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-nav {
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav li {
-  display: inline-block;
-}
-
-navbar-brand {
-  color: darkgreen;
-  font-size: larger;
-}
 body {
   background-color: #e7ebd6;
+  overflow-x: hidden;
+  width: 100vw;
 }
-
+/* the first title start */
 #h1 {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-family: "Anuphan";
   font-size: 60px;
 }
-
+/* the first title end */
+/*  the moving imgs start */
 .image-container {
   display: flex;
   justify-content: center;
@@ -79,7 +52,42 @@ body {
   border-radius: 30px;
   transition: transform 0.3s ease-in-out;
 }
+/*  the moving imgs end */
+/* the moving imgs animation start */
+.wave {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.image-container div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.image-container div:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.image-container div:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.image-container div:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.image-container div:nth-child(5) {
+  animation-delay: 0.9s;
+}
+/* the moving imgs animation end */
 
+/*  our mission start */
 .ourmission-container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -115,14 +123,7 @@ body {
 .ourmission-col2.show-img {
   right: 0;
 }
-/* .show-btn{
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-.hide-btn{
-  opacity: 0;
-  pointer-events: none;
-} */
+
 #capteur {
   margin-top: 80px;
 }
@@ -148,6 +149,8 @@ body {
   display: grid;
   grid-area: 2/1/3/3;
 }
+/*  our mission end */
+/*  the bande start */
 .bande-container-ex {
   display: flex;
   justify-content: center;
@@ -174,10 +177,11 @@ body {
   margin-right: 15px;
 }
 .bande-item p {
-  font-size: 15px;
+  font-size: 14px;
   max-width: 300px;
 }
-
+/*  the bande end */
+/*  choose us start */
 .chooseus-container {
   height: 400px;
   display: flex;
@@ -194,6 +198,8 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+/*  choose us end */
+/* leaders start */
 .leaders-container {
   height: 800px;
   display: flex;
@@ -259,66 +265,8 @@ h4 {
   transform: scale(1.2);
   animation: wave 1.3s ease-in-out infinite;
 }
-
-.wave {
-  display: flex;
-  justify-content: center;
-  height: 100px;
-}
-@keyframes wave {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.image-container div:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.image-container div:nth-child(2) {
-  animation-delay: 0.3s;
-}
-.image-container div:nth-child(3) {
-  animation-delay: 0.5s;
-}
-.image-container div:nth-child(4) {
-  animation-delay: 0.7s;
-}
-.image-container div:nth-child(5) {
-  animation-delay: 0.9s;
-}
-footer .bottom-footer {
-  background-color: #0c2903;
-  padding: 25px 0 10px;
-}
-footer .top-footer {
-  background-color: #195108;
-  padding: 10px 0 10px;
-  display: flex;
-  flex-direction: column;
-
-  height: 60px;
-  width: 100%;
-  margin-top: 80px;
-}
-
-.subscribe-container {
-  grid-template-columns: 75% 10% 10%;
-  display: grid;
-  place-items: center;
-  margin-left: 60px;
-  width: 950px;
-}
-#subscribe-p {
-  margin-bottom: 0px;
-
-  color: #e7ebd6;
-  font-size: 17px;
-}
+/* leaders end */
+/* footer start */
 footer {
   background-color: #0c2903;
   color: #e7ebd6;
@@ -351,7 +299,8 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
 }
-
+/* footer end */
+/* copyright start */
 .copyright {
   font-size: 14px;
   color: #e7ebd6;
@@ -366,7 +315,8 @@ h3 {
   display: grid;
   grid-template-columns: 20% 60% 20%;
 }
-
+/* copyright end */
+/* backToTopBtn start */
 #backToTopBtn {
   display: none;
   position: fixed;
@@ -384,16 +334,5 @@ h3 {
 #backToTopBtn:hover {
   transform: scale(1.05);
   animation: wave 1.3s ease-in-out infinite;
-  
 }
-
-.slide-in {
-  position: absolute;
-  top: 0;
-  right: -100%; /* Move the div off-screen to the right */
-  transition: transform 0.5s ease-out; /* Add a transition effect */
-}
-.slide-in.active {
-  transform: translateX(0); /* Move the div back into view */
-  right: 0; /* Ensure that the div is flush with the right edge of the screen */
-}
+/* backToTopBtn end */

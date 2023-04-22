@@ -1,6 +1,5 @@
-// -----------------------div appears start--------------------------
+// -----------------------div appears right start--------------------------
 
-// Call the addHtml function to add your HTML code to the target div
 const box = document.querySelector(".ourmission-col2");
 const text = document.querySelector("#capteur");
 function isElementInViewport(el) {
@@ -20,12 +19,12 @@ function handleScroll() {
 }
 
 window.addEventListener("scroll", handleScroll);
-// -----------------------div appears end--------------------------
-// -----------------------back to top btn appears start--------------------------
+// -----------------------div appears from right end--------------------------
+// -----------------------back to top btn start--------------------------
 // Get the button
 let backToTopBtn = document.querySelector("#backToTopBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 1900px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -46,34 +45,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// -----------------------back to top btn appears end--------------------------
-const slideInDiv = document.querySelector(".slide-in");
-
-function debounce(func, wait = 20, immediate = true) {
-  let timeout;
-  return function () {
-    const context = this,
-      args = arguments;
-    const later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    const callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
-function checkSlide() {
-  const slideInAt =
-    window.scrollY + window.innerHeight - slideInDiv.offsetHeight / 2;
-  const isHalfShown = slideInAt > slideInDiv.offsetTop;
-  if (isHalfShown) {
-    slideInDiv.classList.add("active");
-  } else {
-    slideInDiv.classList.remove("active");
-  }
-}
-
-window.addEventListener("scroll", debounce(checkSlide));
+// -----------------------back to top btn end--------------------------
