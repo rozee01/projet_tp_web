@@ -5,6 +5,40 @@
   font-family: var(--bs-body-font-family);
 }
 
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/*navbar start */
+.navbar-nav{
+	margin-left:200px;
+}
+
+#logo {
+	font-size:  45px;
+	font-weight: 700;
+	color: #195108;
+	text-shadow: 0px 2px 2px #ffffff;
+
+}
+.nav-item .nav-link {
+	font-family: 'Rubik', sans-serif;
+	font-size:16 px;
+	font-weight:700;
+	letter-spacing:2px;
+	color: #AB1B3F;
+	margin-left : 2rem;
+}
+.nav-item .nav-link:hover{
+	background:#AB1B3F;
+	color:#f2f2f2;
+
+
+}
+/*navbar end */
+
 body {
   background-color: #e7ebd6;
   overflow-x: hidden;
