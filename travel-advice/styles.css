@@ -106,3 +106,30 @@ font-size: 20px;
 .no-decoration {
 	text-decoration: none;
   }
+  .section{
+
+		background-color: green;
+	  
+  }
+  .tips-card {
+	padding-top: 20px;
+    background-color: #ffe2ff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+}
+.cards{
+	padding-bottom: 50px;
+
+}
+.tips-body{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background-image: url('../pics/leaves.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+}
