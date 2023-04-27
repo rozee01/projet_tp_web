@@ -1,3 +1,16 @@
+body{
+  background: #e7ebd6;
+  overflow-x: hidden;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+  font-family: 'rubik', sans-serif;
+scroll-behavior: smooth;
+}
+
 /*navbar start */
 .navbar-nav{
 	margin-left:200px;
@@ -25,17 +38,7 @@
 
 }
 /*navbar end */
-body{
-    background: #e7ebd6;
-}
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-    font-family: 'rubik', sans-serif;
-	scroll-behavior: smooth;
-}
 
 /*partie home start*/
 
@@ -59,6 +62,8 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: #C9E2C2;
+    text-shadow: 1px 1px 1px #000000;
+
 }
 
 .contparagraphe1 {
@@ -68,6 +73,7 @@ body{
     padding-right: 90 px;
     text-align: center;
     margin-bottom: 200px;
+   
 
 
 }
