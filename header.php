@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navbar">
   <div class="container-fluid">
-    <img src="pics/tour.png"  class="img-fluid"  style="width:140px;" > 
-    <a class="navbar-brand"  href="index.html" id="logo">TourBuddy</a>
+    <img src="../pics/tour.png"  class="img-fluid"  style="width:140px;" > 
+    <a class="navbar-brand"  href="index.html" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,9 +17,6 @@
             <li><a class="dropdown-item" href="continents/dest_eu.html">Europe</a></li>
             <li><a class="dropdown-item" href="continents/dest_amn.html">North America</a></li>
             <li><a class="dropdown-item" href="continents/dest_ams.html">South America</a></li>
-
-
-
           </ul>
         </li>
         <li class="nav-item dropdown">
