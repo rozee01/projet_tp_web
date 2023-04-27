@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>About us</title>
+    <?php include_once('../dependancies.php')?>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,56 +29,13 @@
       alt="Back to Top"
     />
     <!--navbar start-->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light" id="navbar">
-  <div class="container-fluid">
-    <img src="../pics/tour.png"  class="img-fluid"  style="width:140px;" > 
-    <a class="navbar-brand"  href="../index.html" id="logo">TourBuddy</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar" >
-      <div class="mx-auto">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Destinations</a>
-          <ul class="dropdown-menu"> 
-            <li><a class="dropdown-item" href="continents/dest_africa.html">Africa</a></li>
-            <li><a class="dropdown-item" href="continents/dest_as.html">Asia</a></li>
-            <li><a class="dropdown-item" href="continents/dest_eu.html">Australia</a></li>
-            <li><a class="dropdown-item" href="continents/dest_eu.html">Europe</a></li>
-            <li><a class="dropdown-item" href="continents/dest_amn.html">North America</a></li>
-            <li><a class="dropdown-item" href="continents/dest_ams.html">South America</a></li>
+    <?php include_once('../header.php')?>
 
-
-
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Travel Advice</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Safety tips</a></li>
-            <li><a class="dropdown-item" href="#">Packing tips</a></li>
-            <li><a class="dropdown-item" href="#">Budget tips</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../about_us/aboutus.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../Login.html" id="login">Log In</a>
-        </li>  
-      </li>
-      
-      </ul>
-    </div>
-    </div>
-  </div>
-</nav>
     <!--navbar end-->
     <main role="main">
       <div class="album">
         <!-- moving imgs start -->
-        <div class="container" style="margin-top: 80px">
+        <div class="container" style="margin-top: 200px">
           <h1 id="h1">
             <!-- Save More, Travel Better -->
             <!-- Your trip Your way -->
@@ -389,40 +347,7 @@
         </div>
         <!-- leaders end -->
         <!-- footer start -->
-        <footer>
-          <div class="bande-container-ex">
-            <div class="row-bottom">
-              <div class="col-md-6">
-                <h3>About Us</h3>
-                <p id="footer-p">
-                  We are a group of friends that recommends destinations and
-                  best guides to travelers around the world.
-                </p>
-              </div>
-              <div class="col-md-6">
-                <h3>Contact Us</h3>
-                <p id="footer-p">
-                  INSAT Centre Urbain Nord<br />Tunis, TUN 5555<br />Phone:
-                  +216-55-666-777<br />Email: TourBuddy@gmail.com <br />
-                  <!-- Instagrame: TourBuddy <br />
-                  Facebook: TourBuddy -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <a href="#" id="back-to-top"><img src="../pics/icons8-facebook-48.png" alt="Back to Top"></a> -->
-        </footer>
-        <!-- footer end -->
-        <!-- copyright start -->
-        <div class="div-copyright">
-          <div></div>
-          <p class="copyright">
-            Copyright © 2023 TourBuddy. All rights reserved.
-          </p>
-          <div></div>
-        </div>
-        <!-- copyright end -->
-      </div>
+        <?php include_once('../footer.php')?>
     </main>
     <script src="aboutus.js"></script>
   </body>

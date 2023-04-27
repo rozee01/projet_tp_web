@@ -3,20 +3,10 @@
   <head>
     <title>TourBuddy Login</title>
     <link rel="stylesheet" type="text/css" href="Login.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <?php include_once('dependancies.php')?>
   </head>
   <body>
+    <?php include_once('header.php')?>
     <div class="login-box">
       <img src="pics/output-onlinepngtools.png" class="avatar" />
       <h1>Sign In</h1>
@@ -40,7 +30,7 @@
       <p>don't have an account? Create one !<br> <a href="create/create.html">create a new account</a></p>
 
     </div>
-
+    <?php include_once('footer.php')?>
     <script src="home_demo.js"></script>
   </body>
 </html>

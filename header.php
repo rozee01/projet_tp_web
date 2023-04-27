@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navbar">
   <div class="container-fluid">
-    <img src="pics/tour.png"  class="img-fluid"  style="width:140px;" > 
-    <a class="navbar-brand"  href="index.html" id="logo">TourBuddy</a>
+    <img src="../pics/tour.png"  class="img-fluid"  style="width:140px;" > 
+    <a class="navbar-brand"  href="index.php" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,21 +17,13 @@
             <li><a class="dropdown-item" href="continents/dest_eu.html">Europe</a></li>
             <li><a class="dropdown-item" href="continents/dest_amn.html">North America</a></li>
             <li><a class="dropdown-item" href="continents/dest_ams.html">South America</a></li>
-
-
-
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Travel Advice</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Safety tips</a></li>
-            <li><a class="dropdown-item" href="#">Packing tips</a></li>
-            <li><a class="dropdown-item" href="#">Budget tips</a></li>
-          </ul>
+          <a class="nav-link " href="travel-advice.php" role="button" >Travel Advice</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#AboutUs">About Us</a>
+            <a class="nav-link" href="../about_us/aboutus.php">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Login.html" id="login">Log In</a>
