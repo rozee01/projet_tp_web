@@ -5,57 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Australia</title>
-    
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <?php include_once('../dependancies.php')?>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-     <!--navbar start-->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-    <div class="container-fluid">
-      <img src="pics/tour.png"  class="img-fluid"  style="width:140px;" > 
-      <a class="navbar-brand"  href="index.html" id="logo">TourBuddy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar" >
-        <div class="mx-auto">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Destinations</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="dest_africa.html">Africa</a></li>
-              <li><a class="dropdown-item" href="dest_as.html">Asia</a></li>
-              <li><a class="dropdown-item" href="dest_aus.html">Australia</a></li>
-              <li><a class="dropdown-item" href="dest_eu.html">Europe</a></li>
-              <li><a class="dropdown-item" href="dest_amn.html">North America</a></li>
-              <li><a class="dropdown-item" href="dest_ams.html">South America</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#TravelAdvice">Travel Advice</a>
-           
-          <li class="nav-item">
-            <a class="nav-link" href="../about_us/aboutus.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="create/create.html" id="login">Log In</a>
-          </li>  
-        </li>
-        
-        </ul>
-      </div>
-      </div>
-    </div>
-</nav>
-    <!--navbar end-->
+<?php include_once('../header.php')?>
 
     <!--top destinations start-->
 
@@ -100,36 +56,9 @@
     </div>
 
 
-
-
-
     <!--top destionations end-->
-
-
-    <!--footer section-->
-
+    <?php include_once('../footer.php')?>
  
- <footer id="footer">
-    <h1>TourBuddy</h1>
-    <p>Thank you for visiting our travel blog! Follow us.</p>
-  
-    <div class="box">
-      <a href="#" ><i class="fab fa-facebook-f">facebook</i></a>
-      <a href="#" ><i class="fab fa-instagram">instagram</i></a>
-      <a href="#" ><i class="fab fa-twitter">twitter</i></a>
-  
-    <div class="credit">
-      <p><br>Designed By :<span id="insat">JASTA CODING</span></p>
-    </div>
-    <div class="copyright">
-      <p>&copy;Copyright JASTA CODING.All Rights Reserved</p>
-    </div>
-   </footer>
-  
-  
-  
- 
-  
     <!-- Include Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
