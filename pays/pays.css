@@ -7,7 +7,7 @@ body{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-  font-family: 'rubik', sans-serif;
+font-family: 'rubik', sans-serif;
 scroll-behavior: smooth;
 }
 
@@ -62,8 +62,7 @@ scroll-behavior: smooth;
     font-size: 20px;
     font-weight: bold;
     color: #C9E2C2;
-    text-shadow: 1px 1px 1px #000000;
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contparagraphe1 {
@@ -73,9 +72,6 @@ scroll-behavior: smooth;
     padding-right: 90 px;
     text-align: center;
     margin-bottom: 200px;
-   
-
-
 }
 
 #myBtn {
