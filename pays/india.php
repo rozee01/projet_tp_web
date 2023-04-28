@@ -73,28 +73,39 @@
         </div>
     </nav>
     <!--navbar end-->
-
+    <?php
+    require_once ('../CnxDB.php');
+    require_once('../Repository.php');
+    require_once('../PaysRepository.php');
+    
+    $paysRepository = new PaysRepository();
+    
+    $pays = $paysRepository->findByName('India');
+    
+    $title = $pays->name;
+$paragraph = $pays->description;
+$url1 = $pays->url1;
+$title1 = $pays->title_of_url1;
+$url2 = $pays->url2;
+$title2 = $pays->title_of_url2;
+$url3 = $pays->url3;
+$title3 = $pays->title_of_url3;
+$url4 = $pays->url4;
+$title4 = $pays->title_of_url4;
+$url5 = $pays->url5;
+$title5 = $pays->title_of_url5;
+$url6 = $pays->url6;
+$title6 = $pays->title_of_url6;
+    
+    ?>
 
     <div class="background">
         <div class="container-de-titre">
-            <h1 id="titre">INDIA</h1>
+            <h1 id="titre"><?= $title ?>  </h1>
         </div>
         <div class="contparagraphe1" style="text-align: center">
             <p id="paragraphe1">
-                India is a land of diversity and contrasts, and visiting this country can be an enriching experience
-                for<br />
-                anyone seeking to explore new cultures, histories, and ways of life. From the majestic Himalayas to
-                the<br />
-                sun-kissed beaches of Goa, from the bustling cities of Delhi and Mumbai to the tranquil backwaters
-                of<br />
-                Kerala, India has something for everyone. The country's rich history, <span id="dots">...</span><span
-                    id="more">vibrant art and<br />
-                    music scenes, and mouth-watering cuisine are sure to captivate any visitor. Moreover, India is known
-                    <br />
-                    for its warm hospitality and friendly people, who will welcome you with open arms and make you feel
-                    at home.<br />
-                    So if you're looking for an adventure of a lifetime, come and explore the wonders of India, and
-                    you'll <br />come back with memories that will last a lifetime.</span>
+            <?= $paragraph ?>
             </p>
             <p onclick="readMore()" id="myBtn">Read more</p>
             <br />
@@ -112,15 +123,15 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
-                    <img id="myImage" src="./pictures/tajmahal.jpg" alt="Destination 1">
+                    <img id="myImage" src="<?= $url1 ?>" alt="Destination 1">
 
-                    <div class="image-caption">Taj Mahal</div>
+                    <div class="image-caption"><?= $title1 ?></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
-                    <img src="./pictures/kerala.jpg" alt="Destination 2">
-                    <div class="image-caption">Kerala</div>
+                    <img src="<?= $url2 ?>" alt="Destination 2">
+                    <div class="image-caption"><?= $title2 ?></div>
 
 
 
@@ -128,8 +139,8 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
-                    <img src="./pictures/Golden-Temple.webp" alt="Destination 3">
-                    <div class="image-caption">Golden Temple</div>
+                    <img src="<?= $url3 ?>" alt="Destination 3">
+                    <div class="image-caption"><?= $title3?></div>
 
 
                 </div>
@@ -138,22 +149,22 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
-                    <img src="./pictures/jaipur.webp" alt="Destination 1">
-                    <div class="image-caption">Jaipur</div>
+                    <img src="<?= $url4 ?>" alt="Destination 1">
+                    <div class="image-caption"><?= $title4 ?></div>
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
-                    <img src="./pictures/laketoba.jpeg" alt="Destination 2">
-                    <div class="image-caption">Varanasi</div>
+                    <img src="<?= $url5 ?>" alt="Destination 2">
+                    <div class="image-caption"><?= $title5 ?></div>
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
-                    <img src="./pictures/hampi.jpg" alt="Destination 3">
-                    <div class="image-caption">Hampi</div>
+                    <img src="<?= $url6 ?>" alt="Destination 3">
+                    <div class="image-caption"><?= $title6 ?></div>
 
 
                 </div>
