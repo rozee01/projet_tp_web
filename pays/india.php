@@ -26,53 +26,14 @@
             height: 100%;
         }
     </style>
+    <link rel="stylesheet" href="../comment_section/comment.css" />
 
 </head>
 
 <body>
     <!--navbar start-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-md-3" id="navbar">
-        <div class="container-fluid">
-            <img src="pictures/tour.png" class="img-fluid" style="width:140px;">
-            <a class="navbar-brand" href="index.html" id="logo">TourBuddy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <div class="mx-auto">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown">Destinations</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Link</a></li>
-                                <li><a class="dropdown-item" href="#">Another link</a></li>
-                                <li><a class="dropdown-item" href="#">A third link</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Travel
-                                Advice</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Safety tips</a></li>
-                                <li><a class="dropdown-item" href="#">Packing tips</a></li>
-                                <li><a class="dropdown-item" href="#">Budget tips</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#AboutUs">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="create/create.html" id="login">Log In</a>
-                        </li>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!--navbar end-->
+<?php include_once('../header.php') ; ?>
+  <!--navbar end-->
 
 
     <div class="background">
@@ -82,19 +43,19 @@
         <div class="contparagraphe1" style="text-align: center">
             <p id="paragraphe1">
                 India is a land of diversity and contrasts, and visiting this country can be an enriching experience
-                for<br />
+                for
                 anyone seeking to explore new cultures, histories, and ways of life. From the majestic Himalayas to
-                the<br />
+                the
                 sun-kissed beaches of Goa, from the bustling cities of Delhi and Mumbai to the tranquil backwaters
-                of<br />
+                of
                 Kerala, India has something for everyone. The country's rich history, <span id="dots">...</span><span
-                    id="more">vibrant art and<br />
+                    id="more">vibrant art and
                     music scenes, and mouth-watering cuisine are sure to captivate any visitor. Moreover, India is known
-                    <br />
+                    
                     for its warm hospitality and friendly people, who will welcome you with open arms and make you feel
-                    at home.<br />
+                    at home.
                     So if you're looking for an adventure of a lifetime, come and explore the wonders of India, and
-                    you'll <br />come back with memories that will last a lifetime.</span>
+                    you'll come back with memories that will last a lifetime.</span>
             </p>
             <p onclick="readMore()" id="myBtn">Read more</p>
             <br />
@@ -326,28 +287,13 @@
     <!--video end-->
 
 
-
+    <?php include_once('../comment_section/comment.php') ; ?>
 
 
 
     <!--footer section-->
 
-    <footer id="footer">
-        <h1>TourBuddy</h1>
-        <p>Thank you for visiting our travel blog! Follow us.</p>
-
-        <div class="box">
-            <a href="#"><i class="fab fa-facebook-f">facebook</i></a>
-            <a href="#"><i class="fab fa-instagram">instagram</i></a>
-            <a href="#"><i class="fab fa-twitter">twitter</i></a>
-
-            <div class="credit">
-                <p><br>Designed By :<span id="insat">JASTA CODING</span></p>
-            </div>
-            <div class="copyright">
-                <p>&copy;Copyright JASTA CODING.All Rights Reserved</p>
-            </div>
-    </footer>
+    <?php include_once('../footer.php') ; ?>
 
 
 

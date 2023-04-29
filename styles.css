@@ -149,6 +149,7 @@ path:hover{
 	background-color: #0c2903;
 	color: #e7ebd6;
 	padding: 2px 0;
+	margin-top: 50px;
   }
   .bande-container-ex {
 	display: flex;
@@ -169,7 +170,7 @@ path:hover{
 	column-gap: 105px;
   }
   
-  .col-md-6 {
+  .footercol {
 	width: 48%;
   }
   
