@@ -2,7 +2,7 @@
 class CnxDB
 {
     private static $_dbname = "travel";
-    private static $_user = "admin";
+    private static $_user = "root";
     private static $_pwd = "";
     private static $_host = "localhost";
 
