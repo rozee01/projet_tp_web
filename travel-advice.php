@@ -36,7 +36,7 @@
     </div>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5 cards">
         <div class="row">
             <div class="col-md-4 mb-4 ">
                 <a href="#packing" class="no-decoration">
@@ -89,7 +89,7 @@
 
             <div class="col-md-6 mb-6">
                 <a href="#sustainability" class="no-decoration">
-                    <div class="card btn btn-outline-success">
+                    <div class="card btn btn-outline-success ">
                         <img src="pics/Sustainability.png" class="card-img-top" alt="Photo 5">
                         <div class="card-body">
                             <h5 class="card-title">Sustainability tips</h5>
@@ -100,36 +100,96 @@
         </div>
     </div>
 
-
+    <div class="container tips-body">
     <section id="packing">
-        <!-- your section content goes here -->
-        <p></p>
+    <div class="card container tips-card">
+    <div class="card-header">
+        <h3>Packing Tips:</h3>
+    </div>
+    <div class="card-body">
+        <ol>
+            <li>Make a packing list of essential items, including clothing, toiletries, electronics, and any necessary documents.</li>
+            <li>Use packing cubes or compression bags to organize your items and maximize space in your luggage.</li>
+            <li>Pack versatile clothing items that can be dressed up or down and mixed and matched to create multiple outfits.</li>
+            <li>Limit your carry-on luggage to avoid paying extra fees and to reduce your stress while navigating busy airports.</li>
+            <li>Consider packing a portable charger to keep your electronic devices powered up during your travels.</li>
+        </ol>
+    </div>
+</div>
     </section>
     <section id="budget">
-        <!-- your section content goes here -->
-        <p></p>
+    <div class="card container tips-card">
+    <div class="card-header">
+        <h3>Budget Tips:</h3>
+    </div>
+    <div class="card-body">
+        <ol>
+            <li>Set a budget for your trip and track your expenses to avoid overspending.</li>
+            <li>Use discount travel sites or apps to find the best deals on flights, accommodations, and activities.</li>
+            <li>Research free or low-cost attractions and activities to explore your destination without breaking the bank.</li>
+            <li>Eat like a local and explore street food markets or grocery stores to save money on meals.</li>
+            <li>Travel during the off-season to take advantage of lower prices and fewer crowds.</li>
+        </ol>
+    </div>
+</div>
     </section>
     <section id="safety">
-        <!-- your section content goes here -->
-        <p></p>
+    <div class="card container tips-card">
+    <div class="card-header">
+        <h3>Safety Tips:</h3>
+    </div>
+    <div class="card-body">
+        <ol id="safe">
+            <li>Research your destination before you go to learn about any potential safety risks or travel advisories.</li>
+            <li>Keep your belongings secure by using a money belt, locking your luggage, and being aware of your surroundings.</li>
+            <li>Stay connected with family and friends by sharing your itinerary and staying in touch during your trip.</li>
+            <li>Avoid walking alone at night or in unfamiliar areas and stay on well-lit streets with other people around.</li>
+            <li>Trust your instincts and be aware of any suspicious or uncomfortable situations, and know how to contact local emergency services if necessary.</li>
+        </ol>
+    </div>
+</div>
+
     </section>
     <section id="health">
-        <!-- your section content goes here -->
-        <p></p>
+    <div class="card container tips-card">
+    <div class="card-header">
+        <h3>Health Tips:</h3>
+    </div>
+    <div class="card-body">
+        <ol>
+            <li>Get vaccinated before you travel to prevent any illnesses that may be present in the destination you're visiting.</li>
+            <li>Carry hand sanitizer and disinfectant wipes to clean your hands and surfaces, especially in public spaces like airports, trains, and buses.</li>
+            <li>Eat healthy foods and stay hydrated by drinking plenty of water to keep your body nourished and energized.</li>
+            <li>Exercise regularly by taking a walk, practicing yoga, or using a hotel gym to keep your body active and avoid sitting for long periods.</li>
+            <li>Get enough sleep by establishing a regular sleep schedule to help your body adjust to jet lag and stay refreshed.</li>
+        </ol>
+    </div>
+</div>
     </section>
     <section id="sustainability">
-        <!-- your section content goes here -->
-        <p></p>
+        <div class="card container tips-card">
+    <div class="card-header">
+        <h3>Sustainability Tips:</h3>
+    </div>
+        <div class="card-body">
+        <ol>
+            <li>Choose eco-friendly accommodations that prioritize sustainability and reduce their impact on the environment.</li>
+            <li>Use public transportation, biking or walking whenever possible to reduce greenhouse gas emissions and improve air quality.</li>
+            <li>Avoid single-use plastics by bringing your own reusable water bottle, shopping bag, and toiletries.</li>
+            <li>Shop locally and eat at local restaurants that source ingredients locally to support the local economy and reduce transportation emissions.</li>
+            <li>Be respectful of local customs, traditions, and cultures to minimize your impact on the environment and support the communities you visit.</li>
+        </ol>
+        </div>
+    </div>
     </section>
+    </div>
+  
 
     <!--footer section-->
 
     <?php include_once('footer.php') ; ?>
 
     <!--footer section ends-->
-
-
-
 
     <script type="text/javascript">
   // Set the font size based on the width of the screen
@@ -156,6 +216,7 @@ window.addEventListener('resize', function(event){
     paragraph.style.fontSize = "20px";
   }
 });
+
 
   
 </script>
