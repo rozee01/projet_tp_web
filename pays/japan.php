@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-$country="India";
+$country="Japan";
 require_once ('../CnxDB.php');
 require_once('../Repository.php');
 require_once('../PaysRepository.php');
