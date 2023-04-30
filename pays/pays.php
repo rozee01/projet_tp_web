@@ -234,20 +234,12 @@
         <div class="titree">
             <h2>Safety </h2>
         </div>
-        <p><br>India is a relatively safe travel destination, with a low homicide rate of 3.2 per 100k inhabitants
-            (48% lower than the global average). Still, sexual assaults are common in India, so women traveling
-            alone may want to join a shared tour or other group if possible. Road safety can be an issue too,
-            because the driving and traffic in India can be chaotic and dangerous; taking the train is a safer bet
-            whenever it's an option.
+        <p><br><?=$safety ?>
         </p>
         <div class="titree">
             <h2>Budget</h2>
         </div>
-        <p><br>India is a very budget friendly place to travel, with hostels available from $3 and private rooms
-            starting from $6, but this is one place in Asia where you get what you pay for. Meals are also cheap,
-            costing about $1 to $5 depending on location. Transportation in India is generally by tuk-tuk or car, but
-            the train is better for long distance trips. Short distance trips can be done with the Uber transportation
-            app.
+        <p><br><?=$budget ?>
         </p>
     </div>
     <!--information end-->
