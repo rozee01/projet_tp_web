@@ -14,10 +14,16 @@
 </head>
 <body>
 
-	<div class="container">
+<?php
+include_once 'UserRepository.php';
+$userRepository = new UserRepository();
+//$users = $userRepository->findAll();
+?>
+
+<div class="container">
 		<h1>Become a Tourbuddy</h1>
 		<p>Create an account to start sharing your experience with the world .</p>
-		<form action="adduser.php" method="post">
+		<form action="addUser.php" method="post">
 			<label for="username">Username</label>
 			<input type="text" id="username" name="username" required>
   			<br><br>
