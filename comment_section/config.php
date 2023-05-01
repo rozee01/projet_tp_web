@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "comment_system_php";
+    $dbname = "travel";
 
 
     // Create connection

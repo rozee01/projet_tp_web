@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>About us</title>
   <?php include_once('../dependancies.php') ?>
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../styles.css" />

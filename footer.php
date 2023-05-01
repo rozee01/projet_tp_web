@@ -1,14 +1,14 @@
     <footer>
           <div class="bande-container-ex">
             <div class="row-bottom">
-              <div class="footercol">
+              <div class="footercol col-md-6">
                 <h3>About Us</h3>
                 <p id="footer-p">
                   We are a group of friends that recommends destinations and
                   best guides to travelers around the world.
                 </p>
               </div>
-              <div class="footercol">
+              <div class="footercol col-md-6">
                 <h3>Contact Us</h3>
                 <p id="footer-p">
                   INSAT Centre Urbain Nord<br />Tunis, TUN 5555<br />Phone:
