@@ -1,3 +1,16 @@
+body{
+  background: #e7ebd6;
+  overflow-x: hidden;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'rubik', sans-serif;
+scroll-behavior: smooth;
+}
+
 /*navbar start */
 .navbar-nav {
   margin-left: 200px;
@@ -30,10 +43,6 @@
   color: #f2f2f2;
 }
 /*navbar end */
-body {
-  background: #e7ebd6;
-  overflow-x: hidden;
-}
 
 /*partie home start*/
 
