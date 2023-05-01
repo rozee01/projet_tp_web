@@ -191,9 +191,6 @@
 
     <!--footer section ends-->
 
-
-
-
     <script type="text/javascript">
   // Set the font size based on the width of the screen
   console.log(window.innerWidth);
