@@ -23,7 +23,8 @@
             background-repeat: no-repeat;
             background-position: center center;
             width: 100%;
-            height: 100%;
+            height:850px;
+            margin-bottom: 180px;
         }
     </style>
     <link rel="stylesheet" href="../comment_section/comment.css" />
