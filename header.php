@@ -20,13 +20,13 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link " href="../travel-advice.php" role="button">Travel Advice</a>
+            <a class="nav-link " href="../projet_tp_web/travel-advice.php" role="button">Travel Advice</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../about_us/aboutus.php">About Us</a>
+            <a class="nav-link" href="../projet_tp_web/about_us/aboutus.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Login.php" id="login">Log In</a>
+            <a class="nav-link" href="../projet_tp_web/Login.php" id="login">Log In</a>
           </li>
           </li>
 
