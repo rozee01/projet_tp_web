@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navbar">
   <div class="container-fluid">
-    <img src=<?= "../pics/tour.png" ?> style="width:140px;">
+    <img src= "../pics/tour.png"  style="width:140px;">
     <a class="navbar-brand" href="../index.php" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>

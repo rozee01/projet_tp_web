@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg  bg-light fixed-top" >
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
   <div class="container-fluid">
     <img src=<?= "../pics/tour.png" ?> style="width:140px;">
     <a class="navbar-brand" href="../index.php" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
