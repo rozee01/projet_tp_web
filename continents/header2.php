@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navbar">
+<nav class="navbar navbar-expand-lg  bg-light fixed-top" >
   <div class="container-fluid">
     <img src=<?= "../pics/tour.png" ?> style="width:140px;">
     <a class="navbar-brand" href="../index.php" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
@@ -11,12 +11,12 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown">Destinations</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="continents/dest_africa.php">Africa</a></li>
-              <li><a class="dropdown-item" href="continents/dest_as.php">Asia</a></li>
-              <li><a class="dropdown-item" href="continents/dest_eu.php">Australia</a></li>
-              <li><a class="dropdown-item" href="continents/dest_eu.php">Europe</a></li>
-              <li><a class="dropdown-item" href="continents/dest_amn.php">North America</a></li>
-              <li><a class="dropdown-item" href="continents/dest_ams.php">South America</a></li>
+              <li><a class="dropdown-item" href="../continents/dest_africa.php">Africa</a></li>
+              <li><a class="dropdown-item" href="../continents/dest_as.php">Asia</a></li>
+              <li><a class="dropdown-item" href="../continents/dest_eu.php">Australia</a></li>
+              <li><a class="dropdown-item" href="../continents/dest_eu.php">Europe</a></li>
+              <li><a class="dropdown-item" href="../continents/dest_amn.php">North America</a></li>
+              <li><a class="dropdown-item" href="../continents/dest_ams.php">South America</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -35,13 +35,3 @@
     </div>
   </div>
 </nav>
-<script type="text/javascript">
-  var nav = document.querySelector("nav");
-  window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 100) {
-      nav.classList.add("bg-light","shadow");
-    } else {
-      nav.classList.remove("bg-light", "shadow");
-    }
-  });
-</script>

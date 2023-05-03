@@ -5,9 +5,11 @@
   font-family: "rubik", sans-serif;
   scroll-behavior: smooth;
 }
+
 /*navbar start */
 .navbar-nav {
   margin-left: 200px;
+  ;
 }
 
 #logo {
@@ -16,6 +18,7 @@
   color: #195108;
   text-shadow: 0px 2px 2px #ffffff;
 }
+
 .nav-item .nav-link {
   font-family: "Rubik", sans-serif;
   font-size: 16 px;
@@ -24,27 +27,38 @@
   color: #ab1b3f;
   margin-left: 2rem;
 }
+
 .nav-item .nav-link:hover {
   background: #ab1b3f;
   color: #f2f2f2;
 }
 
 /*top destinations*/
+body {
+  background-color: #E7EBD6;
+}
+
 .destination-box {
   margin-top: 10px;
 }
+
 destination-box {
   cursor: pointer;
+  margin-bottom: 200px;
+
 }
+
 .img-fluid {
-  max-height: 400px;
+  max-height: 600px;
   object-fit: cover;
   width: 80%;
   transition: 0.2s linear;
 }
+
 .img-fluid:hover {
   transform: scale(1.1);
 }
+
 .destination-box h3 {
   margin-top: 20px;
 }
@@ -59,6 +73,7 @@ destination-box {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
 .container h1 {
   font-size: 16 px;
   font-weight: 700;
@@ -67,6 +82,7 @@ destination-box {
   text-shadow: 0px 2px 2px #ffffff;
   font-size: 3rem;
 }
+
 .row {
   padding-top: 50px;
 }
@@ -83,6 +99,7 @@ destination-box {
   color: #195108;
   text-shadow: 0px 2px 2px #ffffff;
 }
+
 .nav-item .nav-link {
   font-family: "Rubik", sans-serif;
   font-size: 16 px;
@@ -91,10 +108,12 @@ destination-box {
   color: #ab1b3f;
   margin-left: 2rem;
 }
+
 .nav-item .nav-link:hover {
   background: #ab1b3f;
   color: #f2f2f2;
 }
+
 /*navbar end */
 /* //////////////////////////////////header css ends/////////////////////////////// */
 
@@ -104,6 +123,7 @@ footer {
   color: #e7ebd6;
   padding: 2px 0;
 }
+
 .bande-container-ex {
   display: flex;
   justify-content: center;
@@ -111,6 +131,7 @@ footer {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+
 .container-footer {
   max-width: 1100px;
   margin: 0 auto;
@@ -137,6 +158,7 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
 }
+
 /* footer end */
 /* copyright start */
 .copyright {
@@ -148,11 +170,13 @@ h3 {
   margin-trim: 20px;
   display: grid;
 }
+
 .div-copyright {
   background-color: #0c2903;
   display: grid;
   grid-template-columns: 20% 60% 20%;
 }
+
 /* copyright end */
 /* backToTopBtn start */
 #backToTopBtn {
@@ -173,6 +197,7 @@ h3 {
   transform: scale(1.05);
   animation: wave 1.3s ease-in-out infinite;
 }
+
 /* backToTopBtn end */
 /* ///////////////////////////////footer css ends////////////////////////////////////// */
 /* the card animation */
@@ -188,6 +213,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .card {
   flex: 1;
   flex-basis: 300px;
@@ -201,11 +227,13 @@ h3 {
   overflow: hidden;
   position: relative;
 }
+
 .card img {
   width: 100%;
   height: 100%;
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
+
 .descriptions {
   position: absolute;
   top: 0px;
@@ -218,32 +246,38 @@ h3 {
   box-sizing: border-box;
   clip-path: circle(0% at 100% 100%);
 }
+
 .card:hover .descriptions {
   left: 0px;
   transition: all 0.7s ease-in-out;
   clip-path: circle(75%);
 }
+
 .card:hover {
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
   transform: scale(0.97);
 }
+
 .card:hover img {
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transform: scale(1.6) rotate(20deg);
   filter: blur(3px);
 }
+
 .card h1 {
   color: #ab1b3f;
   letter-spacing: 1px;
   margin: 0px;
   text-align: center;
 }
+
 .card p {
   height: 70%;
   text-align: center;
   font-size: 22px;
 }
+
 .card button {
   width: 80%;
   height: 40px;
@@ -256,6 +290,7 @@ h3 {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   transition: all 0.5s ease-in-out;
 }
+
 .card button:hover {
   transform: scale(0.95) translateX(-5px);
   transition: all 0.5s ease-in-out;
