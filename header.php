@@ -26,7 +26,7 @@
             <a class="nav-link" href="../about_us/aboutus.php">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Login.html" id="login">Log In</a>
+          <a class="nav-link" href="Login.php" id="login">Log In</a>
         </li>  
       </li>
       
