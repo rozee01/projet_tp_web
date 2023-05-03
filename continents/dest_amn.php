@@ -26,20 +26,17 @@
                         <img src="pics/us.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>United States</h1>
-                            <p>
-                                Is a fascinating country that offers a unique and unforgettable travel experience.
-                            </p>
+                            <p>The United States offers a plethora of diverse and captivating destinations to explore,
+                                from the bustling streets of New York City to the natural wonders of Yosemite National Park.
+                                With its rich cultural heritage, stunning landscapes, and vibrant cities, the U.S. is a
+                                destination that offers something for every traveler to discover and experience.</p>
+
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/unitedstates.php"> Know more about United States</a>
                             </button>
                         </div>
                     </div>
-                    <h3>United States</h3>
-                    <p>The United States offers a plethora of diverse and captivating destinations to explore,
-                        from the bustling streets of New York City to the natural wonders of Yosemite National Park.
-                        With its rich cultural heritage, stunning landscapes, and vibrant cities, the U.S. is a
-                        destination that offers something for every traveler to discover and experience.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -48,20 +45,17 @@
                         <img src="pics/canada.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Canada</h1>
-                            <p>
-                                Is a fascinating country that offers a unique and unforgettable travel experience.
-                            </p>
+                            <p>Canada, a vast and diverse country, offers a treasure trove of natural beauty and cultural
+                                wonders to explore, from the breathtaking Rocky Mountains to the vibrant cities of Toronto,
+                                Vancouver, and Montreal. With friendly locals, rich history, and an abundance of outdoor adventures,
+                                Canada is a must-visit destination for those seeking unforgettable experiences.</p>
+
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/canada.php"> Know more about Canada</a>
                             </button>
                         </div>
                     </div>
-                    <h3>Canada</h3>
-                    <p>Canada, a vast and diverse country, offers a treasure trove of natural beauty and cultural
-                        wonders to explore, from the breathtaking Rocky Mountains to the vibrant cities of Toronto,
-                        Vancouver, and Montreal. With friendly locals, rich history, and an abundance of outdoor adventures,
-                        Canada is a must-visit destination for those seeking unforgettable experiences.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -70,20 +64,17 @@
                         <img src="pics/mexico.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Mexico</h1>
-                            <p>
-                                Is a fascinating country that offers a unique and unforgettable travel experience.
-                            </p>
+                            <p>Mexico is a vibrant destination that offers a rich tapestry of culture, history, and natural beauty.
+                                From exploring ancient ruins and indulging in delicious cuisine to relaxing on pristine beaches and
+                                immersing in colorful festivals, Mexico is a treasure trove of experiences waiting to be discovered by
+                                adventurous travelers..</p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/mexico.php"> Know more about Mexico</a>
                             </button>
                         </div>
                     </div>
-                    <h3>Mexico</h3>
-                    <p>Mexico is a vibrant destination that offers a rich tapestry of culture, history, and natural beauty.
-                        From exploring ancient ruins and indulging in delicious cuisine to relaxing on pristine beaches and
-                        immersing in colorful festivals, Mexico is a treasure trove of experiences waiting to be discovered by
-                        adventurous travelers..</p>
+
                 </div>
             </div>
         </div>

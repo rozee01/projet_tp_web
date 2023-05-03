@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include_once('../header.php') ?>
+    <?php include_once('../continents/header2.php') ?>
     <!--top destinations start-->
 
     <div class="container">
@@ -25,62 +25,53 @@
                         <img src="pics/brazil.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Brazil</h1>
-                            <p>
-                                Is a fascinating country that offers a unique and unforgettable travel experience.
-                            </p>
+                            <p> Brazil is a captivating country that offers travelers a rich tapestry of diverse cultures, breathtaking
+                                natural beauty, and vibrant cities. From the pristine beaches of Rio de Janeiro and the lush Amazon rainforest,
+                                to the pulsating rhythms of samba and the mouth-watering flavors of Brazilian cuisine, there's always something new and
+                                exciting to discover in this South American gem </p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/brazil.php"> Know more about Brazil</a>
                             </button>
                         </div>
                     </div>
-                    <h3>Brazil</h3>
-                    <p> Brazil is a captivating country that offers travelers a rich tapestry of diverse cultures, breathtaking
-                        natural beauty, and vibrant cities. From the pristine beaches of Rio de Janeiro and the lush Amazon rainforest,
-                        to the pulsating rhythms of samba and the mouth-watering flavors of Brazilian cuisine, there's always something new and
-                        exciting to discover in this South American gem </p>
+
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
                     <div class="card">
-                        <img src="pics/peru.jpg" class="img-fluid">
+                        <img src="../pics/peru.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Peru</h1>
-                            <p>
-                                Is a fascinating country that offers a unique and unforgettable travel experience.
-                            </p>
+                            <p>Peru is a land of ancient wonders, where travelers can explore the mystical ruins of Machu Picchu, immerse themselves
+                                in the colorful traditions of the Andean people, and indulge in the tantalizing flavors of Peruvian cuisine. With its
+                                rich history, breathtaking landscapes, and warm hospitality, Peru offers a truly unforgettable travel experience.</p>
+
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/peru.php"> Know more about Peru</a>
                             </button>
                         </div>
                     </div>
-                    <h3>Peru</h3>
-                    <p>Peru is a land of ancient wonders, where travelers can explore the mystical ruins of Machu Picchu, immerse themselves
-                        in the colorful traditions of the Andean people, and indulge in the tantalizing flavors of Peruvian cuisine. With its
-                        rich history, breathtaking landscapes, and warm hospitality, Peru offers a truly unforgettable travel experience.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
                     <div class="card">
-                        <img src="pics/argentina.jpg" class="img-fluid">
+                        <img src="../pics/argentina.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Argentina</h1>
-                            <p>
-                                Is a fascinating country that offers a unique and unforgettable travel experience.
-                            </p>
+                            <p>Argentina is a diverse and captivating destination with something for everyone to enjoy. From the bustling streets of
+                                Buenos Aires, with its rich culture and tango rhythms, to the breathtaking natural wonders of the Andes mountains and
+                                the awe-inspiring Iguazu Falls, Argentina offers a wealth of experiences to discover and explore.</p>
+
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/argentina.php"> Know more about Argentina</a>
                             </button>
                         </div>
                     </div>
-                    <h3>Argentina</h3>
-                    <p>Argentina is a diverse and captivating destination with something for everyone to enjoy. From the bustling streets of
-                        Buenos Aires, with its rich culture and tango rhythms, to the breathtaking natural wonders of the Andes mountains and
-                        the awe-inspiring Iguazu Falls, Argentina offers a wealth of experiences to discover and explore.</p>
                 </div>
             </div>
         </div>
