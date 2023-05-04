@@ -33,7 +33,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/japan.php"> Know more about Japan</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Japan"> Know more about Japan</a>
                             </button>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/india.php"> Know more about India</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=India"> Know more about India</a>
                             </button>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/indonisia.php"> Know more about Indonisia</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Indonesia"> Know more about Indonisia</a>
                             </button>
                         </div>
                     </div>
