@@ -1,5 +1,5 @@
 <?php
-
+require_once('../Repository.php');
 class PaysFactsTipsRepository extends Repository
 {
     public function __construct()

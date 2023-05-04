@@ -33,7 +33,7 @@
                                </p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/sydney.php"> Know more about Sydney</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Sydney"> Know more about Sydney</a>
                             </button>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/uluru.php"> Know more about Uluru</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Uluru"> Know more about Uluru</a>
                             </button>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/theGreatBarrierReef.php"> Know more about this country</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=The Great Barrier Reef"> Know more about this country</a>
                             </button>
                         </div>
                     </div>

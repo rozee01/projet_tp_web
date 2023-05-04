@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Advice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <!-- including general dependancies -->
     <?php include_once ('dependancies.php') ; ?>
@@ -36,72 +39,72 @@
     </div>
 
 
-    <div class="container mt-5 cards">
-        <div class="row">
-            <div class="col-md-4 mb-4 ">
-                <a href="#packing" class="no-decoration">
-                    <div class="card btn btn-outline-success">
-                        <img src="pics/packing.png" class="card-img-top" alt="Photo 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Packing tips</h5>
-                        </div>
-                    </div>
-                </a>
+    <section id="slider" class="pt-5">
+  <div class="container">
+    <br>
+      <div class="slider">
+        <div class="owl-carousel">
+        <div class="slider-card">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+              <img src="pics/packing.png" alt="">
             </div>
-
-
-            <div class="col-md-4 mb-4">
-                <a href="#budget" class="no-decoration">
-                    <div class="card btn btn-outline-success">
-                        <img src="pics/budget.png" class="card-img-top" alt="Photo 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Budget tips</h5>
-                        </div>
-                    </div>
-                </a>
+            <h5 class="mb-0 text-center"><b>PACKING</b></h5>
+            <p class="text-center p-4">Packing effectively can make your trip more comfortable and stress-free. Pack light and versatile clothing, bring necessary items like chargers and adapters, and keep important documents and valuables in a secure place. Don't forget to research any specific items you may need for your destination.
+            <a href="#packing" class="btn btn-pink btn-sm mt-4 mb-2 mx-auto slide-btn"  data-target="#packing-collapse">
+  <i class="fas fa-chevron-down"></i>
+</a>
+            </p>
+          </div>
+          <div class="slider-card">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+              <img src="pics/Sustainability.png" alt="">
             </div>
-
-
-            <div class="col-md-4 mb-4">
-                <a href="#safety" class="no-decoration">
-                    <div class="card btn btn-outline-success">
-                        <img src="pics/safety.png" class="card-img-top" alt="Photo 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Safety tips</h5>
-                        </div>
-                    </div>
-                </a>
+            <h5 class="mb-0 text-center"><b>SUSTAINABILITY</b></h5>
+            <p class="text-center p-4">Traveling sustainably helps preserve the environment and local communities. Be mindful of your carbon footprint and avoid activities that harm the environment. Support local businesses and communities by purchasing from local vendors and learning about local cultures.
+            <a href="#sustainability" class="btn btn-pink btn-sm mt-4 mb-2 mx-auto slide-btn" >
+  <i class="fas fa-chevron-down"></i>
+</a>
+ </p>
+          </div>
+          <div class="slider-card">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+              <img src="pics/budget.png" alt="">
             </div>
-
-
-            <div class="col-md-6 mb-6">
-                <a href="#health" class="no-decoration">
-                    <div class="card btn btn-outline-success">
-                        <img src="pics/travel-health.png" class="card-img-top" alt="Photo 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Health tips</h5>
-                        </div>
-                    </div>
-                </a>
+            <h5 class="mb-0 text-center"><b>BUDGET</b></h5>
+            <p class="text-center p-4">Managing your finances effectively while traveling is essential to avoid running out of money and cutting your trip short. It's important to research costs beforehand, look for affordable options, and avoid unnecessary expenses.<br> 
+            <a href="#budget" class="btn btn-pink btn-sm mt-4 mb-2 mx-auto slide-btn" >
+  <i class="fas fa-chevron-down"></i>
+</a>
+</p>        
+          </div>
+          <div class="slider-card">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+              <img src="pics/safety.png" alt="">
             </div>
-
-
-
-            <div class="col-md-6 mb-6">
-                <a href="#sustainability" class="no-decoration">
-                    <div class="card btn btn-outline-success ">
-                        <img src="pics/Sustainability.png" class="card-img-top" alt="Photo 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Sustainability tips</h5>
-                        </div>
-                    </div>
-                </a>
+            <h5 class="mb-0 text-center"><b>SAFETY</b></h5>
+            <p class="text-center p-4">Staying safe while traveling should always be a top priority. Take precautions like staying aware of your surroundings, avoiding dangerous areas, and keeping your valuables secure. Research local customs and laws to avoid any cultural misunderstandings that could put you in danger.
+            <a href="#safety" class="btn btn-pink btn-sm mt-4 mb-2 mx-auto slide-btn" >
+  <i class="fas fa-chevron-down"></i>
+</a> </p>
+          </div>
+          <div class="slider-card">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+              <img src="pics/travel-health.png" alt="">
             </div>
+            <h5 class="mb-0 text-center"><b>HEALTH</b></h5>
+            <p class="text-center p-4">Maintaining your health while traveling is crucial to enjoy your trip to the fullest. Remember to stay hydrated, get enough sleep, and eat well. Pack any necessary medications or supplements, and research any health risks or precautions you should take before your trip.
+            <a href="#health" class="btn btn-pink btn-sm mt-4 mb-2 mx-auto slide-btn" data-offset="150" >
+  <i class="fas fa-chevron-down"></i>
+</a></p>
+            
+          
         </div>
-    </div>
-
+      </div>
+  </div>
+</section>
     <div class="container tips-body">
-    <section id="packing">
+            
+    <section id="packing" class="tips">
     <div class="card container tips-card">
     <div class="card-header">
         <h3>Packing Tips:</h3>
@@ -117,7 +120,7 @@
     </div>
 </div>
     </section>
-    <section id="budget">
+    <section id="budget" class="tips">
     <div class="card container tips-card">
     <div class="card-header">
         <h3>Budget Tips:</h3>
@@ -133,7 +136,7 @@
     </div>
 </div>
     </section>
-    <section id="safety">
+    <section id="safety" class="tips">
     <div class="card container tips-card">
     <div class="card-header">
         <h3>Safety Tips:</h3>
@@ -150,7 +153,7 @@
 </div>
 
     </section>
-    <section id="health">
+    <section id="health" class="tips">
     <div class="card container tips-card">
     <div class="card-header">
         <h3>Health Tips:</h3>
@@ -166,7 +169,7 @@
     </div>
 </div>
     </section>
-    <section id="sustainability">
+    <section id="sustainability" class="tips">
         <div class="card container tips-card">
     <div class="card-header">
         <h3>Sustainability Tips:</h3>
@@ -183,14 +186,17 @@
     </div>
     </section>
     </div>
-  
+   
 
     <!--footer section-->
 
     <?php include_once('footer.php') ; ?>
 
     <!--footer section ends-->
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript">
   // Set the font size based on the width of the screen
   console.log(window.innerWidth);
@@ -217,8 +223,45 @@ window.addEventListener('resize', function(event){
   }
 });
 
-
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+      margin:10,
+      nav:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      center: true,
+      navText: [
+          "<i class='fa fa-angle-left'></i>",
+          "<i class='fa fa-angle-right'></i>"
+      ],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:3
+          }
+      }
+    });
+  });
   
+  $(document).ready(function() {
+  $('a.slide-btn').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top -($('.navbar').height() + 40 ) 
+      },50);
+    }
+  });
+});
+
 </script>
 </body>
 
