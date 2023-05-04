@@ -43,10 +43,22 @@ body {
 
 	width:100%;
 	height: 90vh;
-	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)), url(pics/try1.jpeg);
-    background-repeat:no-repeat;
-	background-size:cover;
+	
 }
+.home::before {
+	content: ""; /* Create a pseudo-element to hold the blurred background image */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(pics/try1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1; /* Place the pseudo-element behind the child elements */
+	filter: blur(5px); /* Apply the blur effect */
+	opacity: 1; /* Adjust the opacity to your liking */
+  }
 #map{
 	text-align: center;
 }

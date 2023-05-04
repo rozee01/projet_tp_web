@@ -1,5 +1,5 @@
 <div class="continent ">
-  <h1 class="heading title">Click on the continent you want to discover </h1>
+  <h1 class="heading title" style="margin-top: 100px">Click on the continent you want to discover </h1>
   <div id="map">
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
     width="612.000000pt" height="459.000000pt" viewBox="0 0 612.000000 459.000000"
