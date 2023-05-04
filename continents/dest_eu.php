@@ -34,7 +34,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/italy.php"> Know more about Italy</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Italy"> Know more about Italy</a>
                             </button>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                                 in its lively traditions, flavorful cuisine, and warm hospitality.</p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/spain.php"> Know more about Spain</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Spain"> Know more about Spain</a>
                             </button>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                                 its enchanting beauty and savoir-faire.</p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/france.php"> Know more about France</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=France"> Know more about France</a>
                             </button>
                         </div>
                     </div>
