@@ -33,7 +33,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/unitedstates.php"> Know more about United States</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=United States"> Know more about United States</a>
                             </button>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/canada.php"> Know more about Canada</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Canada"> Know more about Canada</a>
                             </button>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                                 adventurous travelers..</p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/mexico.php"> Know more about Mexico</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Mexico"> Know more about Mexico</a>
                             </button>
                         </div>
                     </div>
