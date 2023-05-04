@@ -1,4 +1,5 @@
 <?php 
+require_once ('../CnxDB.php');
 abstract class Repository
 {
     protected PDO $db;

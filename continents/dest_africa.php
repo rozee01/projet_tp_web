@@ -33,7 +33,7 @@
                                 Morocco is a treasure trove of exotic experiences waiting to be discovered by adventurous travelers. </p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/Morroco.php"> Know more about Morroco</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/Morroco.php?name=Morroco"> Know more about Morroco</a>
                             </button>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                                 and experience its vibrant history and cultural heritage. </p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/SouthAfrica.php"> Know more about South Africa</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=South Africa"> Know more about South Africa</a>
                             </button>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                             </p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/Tanzania.php"> Know more about Tanzania</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Tanzania"> Know more about Tanzania</a>
                             </button>
                         </div>
                     </div>

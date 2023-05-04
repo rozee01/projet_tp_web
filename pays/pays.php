@@ -1,3 +1,8 @@
+<?php 
+$country=$_GET['name'];
+require_once('../PaysRepository.php');
+require_once('../PaysFactsTipsRepository.php');
+ ?>
 <html>
 
 <head>
@@ -76,7 +81,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
                     <img src="<?= $place3 ?>" alt="Destination 3">
-                    <div class="image-caption"><?= $TitlePlace3 ?></div>
+                    <div class="image-caption"><?= $titlePlace3 ?></div>
                 </div>
             </div>
         </div>
@@ -96,7 +101,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="destination-box">
                     <img src="<?= $place6 ?>" alt="Destination 3">
-                    <div class="image-caption"><?= $TitlePlace6 ?></div>
+                    <div class="image-caption"><?= $titlePlace6 ?></div>
                 </div>
             </div>
         </div>
@@ -165,38 +170,37 @@
                     <div class="col">
                         <div class="fact">
                             <div class="circle"><i class="fas fa-language"></i></div>
-                            <div class="info"><span>Language</span><br> Hindi & English, with many other local
-                                languages<br></div>
+                            <div class="info"><span>Language</span><br> <?= $language ?><br></div>
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fas fa-praying-hands"></i></div>
-                            <div class="info"><span>Religion</span><br>Hinduism<br></div>
+                            <div class="info"><span>Religion</span><br><?= $religion ?><br></div>
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fas fa-money-bill-alt"></i></div>
-                            <div class="info"><span>Currency</span><br>Indian Rupee (INR)<br><br></div>
+                            <div class="info"><span>Currency</span><br><?= $currency ?><br><br></div>
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fas fa-city"></i></div>
-                            <div class="info"><span>Capital</span><br>New Delhi<br></div>
+                            <div class="info"><span>Capital</span><br><?= $capital ?><br></div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="fact">
                             <div class="circle"><i class="fas fa-passport"></i></div>
-                            <div class="info"><span>Visa</span><br>eVisa available for 160+ countries</div>
+                            <div class="info"><span>Visa</span><br><?= $visa ?></div>
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fas fa-thermometer-half"></i></div>
-                            <div class="info"><span>Climate</span><br>Varies by altitude & geography</div>
+                            <div class="info"><span>Climate</span><br><?= $climate?></div>
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fas fa-plug"></i></div>
-                            <div class="info"><span>Power Plugs</span><br>Type C / D / M</div>
+                            <div class="info"><span>Power Plugs</span><br><?= $power_plugs ?></div>
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fab fa-uber"></i></div>
-                            <div class="info"><span>Apps</span><br>Uber</div>
+                            <div class="info"><span>Apps</span><br><?= $apps ?></div>
                         </div>
                     </div>
                 </div>
@@ -249,11 +253,10 @@
 
     <!--video-->
     <div class="container" id="vid">
-        <h3>VIDEO</h3>
-        <video controls>
-            <source src="<?= $video ?>" />
-        </video>
-    </div>
+    <h3>VIDEO</h3>
+    <iframe src=<?= $video ?> frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
     <!--video end-->
 
 
