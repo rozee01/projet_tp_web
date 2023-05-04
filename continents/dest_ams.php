@@ -31,7 +31,7 @@
                                 exciting to discover in this South American gem </p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/brazil.php"> Know more about Brazil</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Brazil"> Know more about Brazil</a>
                             </button>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/peru.php"> Know more about Peru</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Peru"> Know more about Peru</a>
                             </button>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/argentina.php"> Know more about Argentina</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Argentina"> Know more about Argentina</a>
                             </button>
                         </div>
                     </div>

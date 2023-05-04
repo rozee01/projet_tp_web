@@ -33,7 +33,7 @@
                                 Morocco is a treasure trove of exotic experiences waiting to be discovered by adventurous travelers. </p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/Morroco.php"> Know more about Morroco</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/Morroco.php?name=Morroco"> Know more about Morroco</a>
                             </button>
                         </div>
                     </div>

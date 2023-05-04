@@ -154,7 +154,7 @@ scroll-behavior: smooth;
 /* Section Packages end */
 
 /*partie video start */
-video {
+iframe {
   width: 90%;
   height: 70%;
   display: block;
