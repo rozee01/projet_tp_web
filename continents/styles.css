@@ -21,7 +21,7 @@
 
 .nav-item .nav-link {
   font-family: "Rubik", sans-serif;
-  font-size: 16 px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 2px;
   color: #ab1b3f;
@@ -32,7 +32,15 @@
   background: #ab1b3f;
   color: #f2f2f2;
 }
-
+.lien{
+  background: #ab1b3f;
+  color: #f2f2f2;
+  font-size: 20px;
+  margin-left: 40%;
+  width: 20%;
+  height: 15%;
+  margin-top: 5%;
+}
 /*top destinations*/
 body {
   background-color: #E7EBD6;
@@ -70,7 +78,7 @@ destination-box {
 
 .container {
   margin-bottom: 150px;
-  margin-top:100px;
+  margin-top:150px;
 }
 
 .container h1 {

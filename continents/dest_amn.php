@@ -27,13 +27,15 @@
                         <div class="descriptions bg-light">
                             <h1>United States</h1>
                             <p>The United States offers a plethora of diverse and captivating destinations to explore,
-                                from the bustling streets of New York City to the natural wonders of Yosemite National Park.
-                                With its rich cultural heritage, stunning landscapes, and vibrant cities, the U.S. is a
-                                destination that offers something for every traveler to discover and experience.</p>
+                                from the bustling streets of New York City to the natural wonders of Yosemite National
+                                Park.
+                                With its stunning landscapes, and vibrant cities, the U.S. is a
+                                destination that offers something for every traveler to discover.</p>
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=United States"> Know more about United States</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; "
+                                    href="../pays/pays.php?name=United States"> Know more about United States</a>
                             </button>
                         </div>
                     </div>
@@ -45,14 +47,17 @@
                         <img src="pics/canada.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Canada</h1>
-                            <p>Canada, a vast and diverse country, offers a treasure trove of natural beauty and cultural
-                                wonders to explore, from the breathtaking Rocky Mountains to the vibrant cities of Toronto,
-                                Vancouver, and Montreal. With friendly locals, rich history, and an abundance of outdoor adventures,
-                                Canada is a must-visit destination for those seeking unforgettable experiences.</p>
+                            <p>Canada, a vast and diverse country, offers a treasure trove of natural beauty and
+                                cultural
+                                wonders to explore, from the breathtaking Rocky Mountains to the vibrant cities of
+                                Toronto,
+                                Vancouver, and Montreal. With friendly locals and an abundance of outdoor adventures,
+                                Canada is a must-visit destination.</p>
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Canada"> Know more about Canada</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; "
+                                    href="../pays/pays.php?name=Canada"> Know more about Canada</a>
                             </button>
                         </div>
                     </div>
@@ -64,13 +69,16 @@
                         <img src="pics/mexico.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Mexico</h1>
-                            <p>Mexico is a vibrant destination that offers a rich tapestry of culture, history, and natural beauty.
-                                From exploring ancient ruins and indulging in delicious cuisine to relaxing on pristine beaches and
-                                immersing in colorful festivals, Mexico is a treasure trove of experiences waiting to be discovered by
-                                adventurous travelers..</p>
+                            <p>Mexico is a vibrant destination that offers a rich tapestry of culture, history, and
+                                natural beauty.
+                                From exploring ancient ruins and indulging in delicious cuisine to
+                                immersing in colorful festivals, Mexico is a treasure trove of experiences waiting to be
+                                discovered by
+                                adventurous travelers.</p>
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href="../pays/pays.php?name=Mexico"> Know more about Mexico</a>
+                                <a class="nav-link" style="text-decoration:none; color: light; "
+                                    href="../pays/pays.php?name=Mexico"> Know more about Mexico</a>
                             </button>
                         </div>
                     </div>
@@ -78,22 +86,23 @@
                 </div>
             </div>
         </div>
+        <button type="button" class="lien" >
+            <i class="fab fa-youtube"></i>
+            <a class="nav-item nav-link" style="text-decoration:none; color: light; " href="../index.php">
+            Back to the continents 
+            </a>
+        </button>
     </div>
 
+        <!--top destionations end-->
 
+        <!--footer section-->
+        <?php include_once('../footer.php') ?>
 
-
-
-    <!--top destionations end-->
-
-
-    <!--footer section-->
-    <?php include_once('../footer.php') ?>
-
-    <!-- Include Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Include Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
