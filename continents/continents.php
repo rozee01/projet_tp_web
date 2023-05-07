@@ -1,6 +1,8 @@
 <?php 
+// start the session 
+session_start();
 $continentName=$_GET['name'];
-include_once('../CountriesRepository.php')
+include_once('../Repositories/CountriesRepository.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,13 +55,49 @@ include_once('../CountriesRepository.php')
                     </div>
                 </div>
             </div>
-            
-         
-            <?php } ;
-             include_once('Suggestion.php')  ;?>
-            
-            
+            <?php }   
+            // retrieve the role from the session
+                $role="Admin";
+                //if Admin, on reçoit les demandes d'ajout 
+            if($role == "Admin")
+            {
+                include_once('../Repositories/DemandeRepository.php');
+            $DemandeRepository= new DemandeRepository();
+             $Demandes = $DemandeRepository->findAll(['continent' => $continentName]);
+
+    foreach ($Demandes as $Demande) {
+    $Demande_elements = ['continent',
+        'name', 'description', 'image'];
+    foreach ($Demande_elements as $element) {
+        //on associe chaque element l colonne mteeou 
+        ${$element} = $Demande->{$element};
+    } ?>
+    
+    <div class="col-lg-4 col-md-6">
+                <div class="destination-box">
+                    <div class="card">
+                        <img src=<?= $image ?> class="img-fluid">
+                        <div class="descriptions bg-light">
+                            <h1><?= $name ?></h1>
+                            <p>
+                          <?= $description ?>
+                            </p>
+
+                            <button style="margin-left: 10%;">
+                                <i class="fab fa-youtube"></i>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href=<?php $reference = "../pays/pays.php?name=".$name ; echo $reference ; ?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        <?php } } 
+            // Si !Admin on peut faire une suggestion d'un pays
+        else 
+             { 
+             include_once('Suggestion.php'); }?>
+            
+        </div>
             
         <button type="button" class="lien" >
             <i class="fab fa-youtube"></i>
