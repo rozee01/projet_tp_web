@@ -1,5 +1,5 @@
-<?php 
-$continentName=$_GET['name'];
+<?php
+$continentName = $_GET['name'];
 include_once('../CountriesRepository.php')
 ?>
 <!DOCTYPE html>
@@ -24,52 +24,67 @@ include_once('../CountriesRepository.php')
     <div class="container">
         <h1 class="text-center mt-5">Top Destinations to explore in <?= $continentName ?> </h1>
         <div class="row">
-        <?php
-    $Continent= new CountriesRepository();
-    $countries = $Continent->findAll(['continent' => $continentName]);
-    foreach ($countries as $country) {
-    $country_elements = ['continent',
-        'name', 'description', 'image'];
-    foreach ($country_elements as $element) {
-        ${$element} = $country->{$element};
-    }
-?>
-       
-            <div class="col-lg-4 col-md-6">
-                <div class="destination-box">
-                    <div class="card">
-                        <img src=<?= $image ?> class="img-fluid">
-                        <div class="descriptions bg-light">
-                            <h1><?= $name ?></h1>
-                            <p>
-                                    <?= $description ?>
-                                 </p>
+            <?php
+            $Continent = new CountriesRepository();
+            $countries = $Continent->findAll(['continent' => $continentName]);
+            foreach ($countries as $country) {
+                $country_elements = [
+                    'continent',
+                    'name', 'description', 'image'
+                ];
+                foreach ($country_elements as $element) {
+                    ${$element} = $country->{$element};
+                }
+            ?>
 
-                            <button style="margin-left: 10%;">
-                                <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href=<?php $reference = "../pays/pays.php?name=".$name ; echo $reference ; ?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
-                            </button>
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-box">
+                        <div class="card">
+                            <img src=<?= $image ?> class="img-fluid" id="animation-img">
+                            <div class="descriptions bg-light">
+                                <h1><?= $name ?></h1>
+                                <p>
+                                    <?= $description ?>
+                                </p>
+
+                                <button style="margin-left: 10%;">
+                                    <i class="fab fa-youtube"></i>
+                                    <a class="nav-link" style="text-decoration:none; color: light; " href=<?php $reference = "../pays/pays.php?name=" . $name;
+                                                                                                            echo $reference; ?>> Know more about <?php if ($name == 'The Great Barrier Reef') {
+                                                                                                                                                        echo 'this country';
+                                                                                                                                                    } else {
+                                                                                                                                                        echo $name;
+                                                                                                                                                    } ?></a>
+                                </button>
+                                <div class="button-verif-container">
+                                    <button>
+                                        <img src="../pics/verify-icon.png" alt="verify">
+                                    </button>
+                                    <button>
+                                        <img src="../pics/cancel-icon.png" alt="cancel">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-         
-            <?php } ;
-             include_once('Suggestion.php')  ;?>
-            
-            
-            </div>
-            
-        <button type="button" class="lien" >
+
+
+            <?php };
+            include_once('Suggestion.php'); ?>
+
+
+        </div>
+
+        <button type="button" class="lien">
             <i class="fab fa-youtube"></i>
             <a class="nav-item nav-link" style="text-decoration:none; color: light; " href="../index.php">
-            Back to the continents 
+                Back to the continents
             </a>
         </button>
-   
-        </div>
-    
+
+    </div>
+
     <!--top destionations end-->
 
     <?php include_once('../footer.php') ?>

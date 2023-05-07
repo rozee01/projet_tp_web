@@ -24,7 +24,7 @@ ul {
   content: "";
   display: block;
   width: 200px;
-  height: 2px;
+  height: 3px;
   background-color: #ab1b3f;
   margin-top: 10px;
 }
@@ -277,7 +277,7 @@ ul {
 }
 .commentsend {
   object-fit: cover;
-  width: 60%;
+  width: 84%;
   background: #fff;
   padding: 12px;
   font-size: 15px;
