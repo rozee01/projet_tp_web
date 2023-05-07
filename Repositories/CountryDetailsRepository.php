@@ -1,10 +1,10 @@
 <?php
-
-class UtilisateurRepository extends Repository
+require_once('Repository.php');
+class CountryDetailsRepository extends Repository
 {
     public function __construct()
     {
-        parent::__construct('utilisateur');
+        parent::__construct('pays');
     }
 
     public function findSpeciale($specialParams)
@@ -12,4 +12,3 @@ class UtilisateurRepository extends Repository
 
     }
 }
-?>
