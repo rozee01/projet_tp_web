@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Become a TOURBUDDY</title>
+  <?php include_once ('../dependancies.php') ; ?>
 	<link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,9 @@ include_once 'UserRepository.php';
 $userRepository = new UserRepository();
 //$users = $userRepository->findAll();
 ?>
-
+  <!--navbar start-->
+  <?php include_once('../header.php') ; ?>
+  <!--navbar end-->
 <div class="container">
 		<h1>Become a Tourbuddy</h1>
 		<p>Create an account to start sharing your experience with the world .</p>
@@ -35,7 +38,8 @@ $userRepository = new UserRepository();
   			<br><br>
 			<button type="submit">Sign up </button>
 		</form>
-		<p>Already have an account? <a href="#">Log in</a></p>
+		<p>Already have an account? <a href="../Login.php">Log in</a></p>
 	</div>
+
 </body>
 </html>

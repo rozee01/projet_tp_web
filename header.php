@@ -4,6 +4,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navbar">
   <div class="container-fluid">
     <img src="../pics/tour.png" style="width:140px;">
+
     <a class="navbar-brand" href="index.php" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -28,6 +29,13 @@
           <li class="nav-item">
             <a class="nav-link" href="about_us/aboutus.php">About Us</a>
           </li>
+          <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Compte</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Login.php">Log In</a></li>
+              <li><a class="dropdown-item" href="create/create.php">Sign In</a></li>
+            </ul>
+          </li>     
           <li class="nav-item">
             <?php
 
@@ -43,9 +51,6 @@
             <a class="nav-link" href="logout.php" id="login"> LogOut </a> </li>';
           }
           ?>
-
-
-
 
           </li>
 
