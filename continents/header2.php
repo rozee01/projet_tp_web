@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<?php if(session_status() === PHP_SESSION_NONE){
+    session_start(); 
+}?><nav class="navbar navbar-expand-sm bg-light navbar-light">
   <div class="container-fluid">
     <img src=<?= "../pics/tour.png" ?> style="width:140px;">
     <a class="navbar-brand" href="../index.php" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
@@ -26,8 +28,20 @@
             <a class="nav-link" href="../about_us/aboutus.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Login.php" id="login">Log In</a>
+            <?php
+
+            if (!isset($_SESSION['user'])) {
+              echo '<a class="nav-link" href="../Login.php" id="login">Login';
+            } else {
+              echo '<a class="nav-link" >', $_SESSION['user'];
+            } ?></a>
           </li>
+          <?php
+          if (isset($_SESSION['user'])) {
+            echo '<li class="nav-item">
+            <a class="nav-link" href="../logout.php" id="login"> LogOut </a> </li>';
+          }
+          ?>
           </li>
 
         </ul>
