@@ -2,7 +2,7 @@
 // start the session 
 session_start();
 $continentName=$_GET['name'];
-include_once('../CountriesRepository.php')
+include_once('../Repositories/CountriesRepository.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +61,7 @@ include_once('../CountriesRepository.php')
                 //if Admin, on reçoit les demandes d'ajout 
             if($role == "Admin")
             {
-                include_once('../DemandeRepository.php');
+                include_once('../Repositories/DemandeRepository.php');
             $DemandeRepository= new DemandeRepository();
              $Demandes = $DemandeRepository->findAll(['continent' => $continentName]);
 
