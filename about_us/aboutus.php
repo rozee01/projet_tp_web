@@ -17,7 +17,7 @@
   <!-- backToTopBtn start -->
   <img onclick="topFunction()" id="backToTopBtn" title="Go to top" src="../pics/icons8-airplane2-64.png" alt="Back to Top" />
   <!--navbar start-->
-  <?php include_once('../continents/header2.php') ?>
+  <?php include_once('../header.php') ?>
 
   <!--navbar end-->
   <main role="main">

@@ -135,7 +135,7 @@ scroll-behavior: smooth;
   transform: scale(1.1);
 }
 .destination-box:hover .image-caption {
-  bottom: 240;
+  bottom:0;
   visibility: visible;
 }
 
