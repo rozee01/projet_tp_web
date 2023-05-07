@@ -33,6 +33,9 @@ html {
 }
 /*navbar end */
 /*Home section start */
+body {
+	background-color: #E7EBD6;
+  }	
 .home{
 
 	width:100%;
