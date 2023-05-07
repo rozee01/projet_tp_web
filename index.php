@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+<?php $pathindex="./";
+	$patht="./";$pathab="./";$pathlogin="./";$pathsignin="./";
+	?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TourBuddy</title>

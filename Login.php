@@ -4,8 +4,13 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 if (isset($_SESSION['user'])) {
   header('location:index.php');
-
 }
+$pathindex = "./";
+$patht = "./";
+$pathab = "./";
+$pathlogin = "./";
+$pathsignin = "./";
+
 include_once './create/access.php';
 
 ?>
@@ -30,7 +35,7 @@ include_once './create/access.php';
       <input type="text" id="username" name="username" placeholder="Enter your username or email" />
       <label for="password">Password</label>
       <input type="password" id="password" name="password" placeholder="Enter your password" />
-      
+
       <input type="submit" value="Log in" name="envoi" />
     </form>
     <p>don't have an account? Create one !<br> <a href="create/create.php">create a new account</a></p>
