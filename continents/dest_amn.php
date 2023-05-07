@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include_once('../header.php') ?>
+<?php include_once('../continents/header2.php') ?>
 
     <!--top destinations start-->
 
