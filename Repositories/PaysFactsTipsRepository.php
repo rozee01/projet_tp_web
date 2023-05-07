@@ -18,5 +18,5 @@ $pays_Facts_Tips = [
     'name', 'language', 'religion', 'visa', 'climate', 'currency', 'power_plugs', 'capital', 'apps', 'flights', 'safety', 'budget'
 ];
 foreach ($pays_Facts_Tips as $element) {
-    ${$element} = $paysFactsTips->{$element};
+    ${$element} = $paysFactsTips["{$element}"];
 }
