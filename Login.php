@@ -26,7 +26,7 @@ include_once './create/access.php'
       
       <input type="submit" value="Log in" name="envoi" />
     </form>
-    <p>don't have an account? Create one !<br> <a href="create/create.html">create a new account</a></p>
+    <p>don't have an account? Create one !<br> <a href="create/create.php">create a new account</a></p>
 
   </div>
   <?php include_once('footer.php') ?>

@@ -29,13 +29,14 @@ abstract class Repository
     
 
 
+  
     public function findByName($name){
         $request = "select * from $this->tableName where name= ?";
         $reponse = $this->db->prepare($request);
         $reponse->execute([$name]);
-        return $reponse->fetch(PDO::FETCH_OBJ);
+        return $reponse->fetch(PDO::FETCH_ASSOC);
     }
-
+    
     public function create($params) {
         $keys = array_keys($params);
 
@@ -50,10 +51,10 @@ abstract class Repository
     }
 
     
-    public function delete($id) {
-        $request = "delete from $this->tableName where id = ?";
+    public function delete($name) {
+        $request = "delete from $this->tableName where name = ?";
         $reponse = $this->db->prepare($request);
-        $reponse->execute([$id]);
+        $reponse->execute([$name]);
     }
 
   

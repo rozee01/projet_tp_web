@@ -1,11 +1,9 @@
 <?php
-include_once('../CountriesRepository.php');
-$Continent = new CountriesRepository();
+include_once('../DemandeRepository.php');
+$Demandes = new DemandeRepository();
 
 
     // Retrieve form data
-    $name = $_POST['name'];
-    $description = $_POST['description'];
     $imagePath = $_FILES['image']['tmp_name'];
     
     // Get file extension
@@ -23,7 +21,7 @@ $Continent = new CountriesRepository();
       $_POST['image'] = $destination;
     
       // Create country
-      $countries = $Continent->Create($_POST);
+      $Demande = $Demandes->Create($_POST);
       header("Location:/index.php" );
     
       // Dump created country to check
