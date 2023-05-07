@@ -10,12 +10,23 @@ abstract class Repository
 
   
     public function findAll($where) {
-
-        $request = "select * from $this->tableName";
-        $reponse = $this->db->prepare($request);
-        $reponse->execute([]);
-        return $reponse->fetchAll(PDO::FETCH_OBJ);
+        $conditions = '';
+        $values = [];
+    
+        foreach ($where as $column => $value) {
+            $conditions .= "$column = ? AND ";
+            $values[] = $value;
+        }
+    
+        $conditions = rtrim($conditions, ' AND ');
+    
+        $request = "SELECT * FROM $this->tableName WHERE $conditions";
+        $response = $this->db->prepare($request);
+        $response->execute($values);
+    
+        return $response->fetchAll(PDO::FETCH_OBJ);
     }
+    
 
 
     public function findByName($name){
