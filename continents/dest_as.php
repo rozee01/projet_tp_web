@@ -27,9 +27,8 @@
                         <div class="descriptions bg-light">
                             <h1>Japan</h1>
                             <p> Japan is a captivating blend of ancient traditions and modern marvels that offer travelers a
-                                unique cultural experience. From the serene temples of Kyoto to the bustling streets of Tokyo,
-                                and the breathtaking cherry blossoms in spring, Japan offers a world of striking contrasts,
-                                cutting-edge technology, and timeless cultural treasures waiting to be explored and discovered.</p>
+                                unique cultural experience. It offers a world of striking contrasts from the serene temples of Kyoto
+                                to cutting-edge technology, and timeless cultural treasures waiting to be explored and discovered.</p>
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
@@ -46,10 +45,9 @@
                         <div class="descriptions bg-light">
                             <h1>India</h1>
                             <p>India, a land of diversity and contrasts, enthralls travelers with its rich history, culture,
-                                and spirituality. From the iconic Taj Mahal in Agra to the bustling streets of Delhi, and the
-                                serene backwaters of Kerala, India offers a sensory explosion of colors, flavors, and experiences
-                                that invite travelers to immerse themselves in its vibrant tapestry of traditions and discover
-                                its captivating allure.</p>
+                                and spirituality. From the iconic Taj Mahal in Agra to the bustling streets of Delhi,
+                                India offers a sensory explosion of colors, flavors, and experiences where you can 
+                                immerse in its vibrant tapestry of traditions.</p>
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
@@ -66,10 +64,9 @@
                         <img src="../pics/indonisia.jpg" class="img-fluid">
                         <div class="descriptions bg-light">
                             <h1>Indonisia</h1>
-                            <p>India, a land of diversity and contrasts, enthralls travelers with its rich history, culture,
-                                and spirituality. From the iconic Taj Mahal in Agra to the bustling streets of Delhi, and the serene
-                                backwaters of Kerala, India offers a sensory explosion of colors, flavors, and experiences that invite
-                                travelers to immerse themselves in its vibrant tapestry of traditions and discover its captivating allure.</p>
+                            <p>Indonesia: a vibrant and diverse tropical paradise, boasting stunning beaches, lush rainforests,
+                            and unique cultural experiences. Explore its rich heritage and indulge in its mouth-watering cuisine. 
+                            From the bustling streets of Jakarta to the idyllic beaches of Bali, Indonesia offers something for everyone.</p>
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
@@ -81,6 +78,12 @@
                 </div>
             </div>
         </div>
+        <button type="button" class="lien" >
+            <i class="fab fa-youtube"></i>
+            <a class="nav-item nav-link" style="text-decoration:none; color: light; " href="../index.php">
+            Back to the continents 
+            </a>
+        </button>
     </div>
 
     <!--top destionations end-->
