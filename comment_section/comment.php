@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+include_once '../isAuthentified.php';
 
 
 if (isset($_POST['send'])) {

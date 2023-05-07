@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include_once('../header.php') ?>
+<?php include_once('../continents/header2.php') ?>
 
     <!--top destinations start-->
 
@@ -95,5 +95,3 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
-</html>
