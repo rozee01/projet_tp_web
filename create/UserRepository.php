@@ -1,5 +1,5 @@
 <?php
-include_once '../Repository.php';
+include_once '../Repositories/Repository.php';
 include_once '../CnxDB.php';
 class UserRepository extends Repository
 {

@@ -1,5 +1,5 @@
 <?php
-require_once('../Repository.php');
+require_once('Repository.php');
 class CountriesRepository extends Repository
 {
     public function __construct()
