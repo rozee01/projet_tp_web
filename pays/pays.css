@@ -35,11 +35,11 @@ scroll-behavior: smooth;
   font-size: 16 px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #ec9baf;
+  color: #AB1B3F;
   margin-left: 2rem;
 }
 .nav-item .nav-link:hover {
-  background: #ec9baf;
+  background: #AB1B3F;
   color: #f2f2f2;
 }
 /*navbar end */
@@ -135,7 +135,7 @@ scroll-behavior: smooth;
   transform: scale(1.1);
 }
 .destination-box:hover .image-caption {
-  bottom: 240;
+  bottom:0;
   visibility: visible;
 }
 
