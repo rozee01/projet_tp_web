@@ -1,11 +1,12 @@
 <?php if (session_status() === PHP_SESSION_NONE) {
   session_start();
 } ?>
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="navbar">
   <div class="container-fluid">
     <img src="../pics/tour.png" style="width:140px;">
 
-    <a class="navbar-brand" href="index.php" id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
+    <a class="navbar-brand" href=<?php echo $pathindex."index.php"?> id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,23 +25,23 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link " href="travel-advice.php" role="button">Travel Advice</a>
+            <a class="nav-link " href=<?php echo $patht."travel-advice.php"?> role="button">Travel Advice</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about_us/aboutus.php">About Us</a>
+            <a class="nav-link" href=<?php echo $pathab."about_us/aboutus.php"?>>About Us</a>
           </li>
           <li class="nav-item dropdown" >
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Compte</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Login.php">Log In</a></li>
-              <li><a class="dropdown-item" href="create/create.php">Sign In</a></li>
+              <li><a class="dropdown-item" href=<?php echo $pathlogin."Login.php"?>>Log In</a></li>
+              <li><a class="dropdown-item" href=<?php echo $pathsignin."create/create.php"?>>Sign In</a></li>
             </ul>
           </li>     
           <li class="nav-item">
             <?php
 
             if (!isset($_SESSION['user'])) {
-              echo '<a class="nav-link" href="Login.php" id="login">Login';
+              echo '<a class="nav-link" href="'.$pathlogin.'Login.php" id="login">Login';
             } else {
               echo '<a class="nav-link" >', $_SESSION['user'];
             } ?></a>
