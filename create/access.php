@@ -24,7 +24,7 @@ if (isset($_POST['envoi'])) {
 
         if ($stmt->rowCount() > 0) {
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
-            $_SESSION['user'] = $user;
+            $_SESSION['user'] = ucfirst($user);
             $_SESSION['role'] = $result['role'] ;
             $isAuthenticated = true;
             header('location:index.php');
