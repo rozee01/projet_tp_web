@@ -72,7 +72,7 @@ include_once('../Repositories/CountriesRepository.php')
             <?php }   
                // Si Admin on peut acceder a la des suggestion d'un pays et valider ou refuser
            
-               if(isset($_SESSION['user'])){
+               if(isset($_SESSION['user']) && isset($role)){
                 if($role == "Admin")
                 {
                     include_once('ListeSuggestions.php');
