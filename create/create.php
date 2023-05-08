@@ -4,6 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Become a TOURBUDDY</title>
+	<?php $pathindex="../";
+	$patht="../";$pathab="../";$pathlogin="../";$pathsignin="../";
+	?>
   <?php include_once ('../dependancies.php') ; ?>
 	<link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">

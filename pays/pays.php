@@ -23,7 +23,11 @@ $Tips = [
 foreach ($Tips as $tip) {
     ${$tip} = $countryTips["{$tip}"];
 }
- ?>
+
+ $pathindex="../";
+	$patht="../";$pathab="../";$pathlogin="../";$pathsignin="../";
+	?>
+ 
 <html>
 
 <head>
