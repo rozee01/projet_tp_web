@@ -30,13 +30,7 @@
           <li class="nav-item">
             <a class="nav-link" href=<?php echo $pathab."about_us/aboutus.php"?>>About Us</a>
           </li>
-          <li class="nav-item dropdown" >
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Compte</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href=<?php echo $pathlogin."Login.php"?>>Log In</a></li>
-              <li><a class="dropdown-item" href=<?php echo $pathsignin."create/create.php"?>>Sign In</a></li>
-            </ul>
-          </li>     
+               
           <li class="nav-item">
             <?php
 
