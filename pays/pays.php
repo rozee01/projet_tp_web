@@ -1,27 +1,39 @@
 <?php 
 $country=$_GET['name'];
+//On doit savoir si la page concerne un pays deja validé ou un pays proposé pas encore validé (on prend cette information de l'url) 
+if ($_GET['demande']=="true"){
+    require_once('../Repositories/DemandeDetailsRepository.php');
+$DetailsRepository = new DemandeDetailsRepository();
+require_once('../Repositories/DemandeTipsRepository.php');
+$TipsRepository = new DemandeTipsRepository();
+    
+    
+} else {
+    require_once('../Repositories/CountryDetailsRepository.php');
+    $DetailsRepository = new CountryDetailsRepository();}
+    require_once('../Repositories/CountryTipsRepository.php');
+    $TipsRepository= new CountryTipsRepository();
 
 // Associer chaque element de la table CountryDetails a sa valeur dans la base de données selon le nom du pays 
-require_once('../Repositories/CountryDetailsRepository.php');
-$CountryDetailsRepository = new CountryDetailsRepository();
-$countryDetails = $CountryDetailsRepository->findByName($country);
+
+
+$Details = $DetailsRepository->findByName($country);
 $details = [
     'name', 'paragraph', 'place1', 'titlePlace1', 'place2', 'titlePlace2', 'place3', 'titlePlace3', 'place4', 'titlePlace4', 'place5', 'titlePlace5', 'place6', 'titlePlace6', 'food1', 'titleFood1', 'food2', 'titleFood2', 'food3', 'titleFood3', 'food4', 'titleFood4', 'food5', 'titleFood5', 'video', 'image'
 ];
 foreach ($details as $detail) {
-    ${$detail} = $countryDetails["{$detail}"];
+    ${$detail} = $Details["{$detail}"];
 }
 
 
 // Associer chaque element de la table CountryTips a sa valeur dans la base de données selon le nom du pays 
-require_once('../Repositories/CountryTipsRepository.php');
-$CountryTipsRepository= new CountryTipsRepository();
-$countryTips = $CountryTipsRepository->findByName($country);
-$Tips = [
+
+$Tips = $TipsRepository->findByName($country);
+$tips = [
     'name', 'language', 'religion', 'visa', 'climate', 'currency', 'power_plugs', 'capital', 'apps', 'flights', 'safety', 'budget'
 ];
-foreach ($Tips as $tip) {
-    ${$tip} = $countryTips["{$tip}"];
+foreach ($tips as $tip) {
+    ${$tip} = $Tips["{$tip}"];
 }
 
  $pathindex="../";

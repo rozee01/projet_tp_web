@@ -63,7 +63,7 @@ include_once('../Repositories/CountriesRepository.php')
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href=<?php $reference = "../pays/pays.php?name=".$name ; echo $reference ; ?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href=<?php $reference = "../pays/pays.php?name=".$name."&demande=false" ; echo $reference ; ?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
                             </button>
                         </div>
                     </div>
@@ -73,11 +73,11 @@ include_once('../Repositories/CountriesRepository.php')
                // Si Admin on peut acceder a la des suggestion d'un pays et valider ou refuser
            
                if(isset($_SESSION['user'])){
-            if($role == "Admin")
-            {
-                include_once('ListeSuggestions.php');
-               
-            } }
+                if($role == "Admin")
+                {
+                    include_once('ListeSuggestions.php');
+    
+                } }
 
             // Si !Admin on peut faire une suggestion d'un pays
         else 
