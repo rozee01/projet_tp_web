@@ -130,7 +130,7 @@ textarea{
 
 </style>
 <div class="container form">
-<form action="AddCountryProcess.php" method="POST" enctype="multipart/form-data">
+<form action="SuggestCountryProcess.php" method="POST" enctype="multipart/form-data">
 		<div class="contact-box my-form">
 			<div class="left">
 				<img id="image-preview" src="" alt="Preview Image" width="100%">
