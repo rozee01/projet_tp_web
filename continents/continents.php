@@ -1,7 +1,8 @@
 <?php 
 // start the session 
+session_start();
 if(isset($_SESSION['user'])){
-    session_start();
+    
     $role=$_SESSION['role'];}
 if (isset($_SESSION['message'])) {
     ?><div id="message"  class="alert alert-success alert-dismissible" role="alert">
@@ -72,12 +73,12 @@ include_once('../Repositories/CountriesRepository.php')
             <?php }   
                // Si Admin on peut acceder a la des suggestion d'un pays et valider ou refuser
            
-               if(isset($_SESSION['user']) && isset($role)){
-                if($role == "Admin")
-                {
+               if(isset($role)&&($role == "Admin")){
+                
+                
                     include_once('ListeSuggestions.php');
     
-                } }
+                }
 
             // Si !Admin on peut faire une suggestion d'un pays
         else 
