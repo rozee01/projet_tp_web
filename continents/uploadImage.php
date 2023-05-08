@@ -9,7 +9,7 @@
     $fileName = uniqid() . '.' . $extension;
   
     // Set destination path
-    $destination = '../pics/' . $fileName;
+    $destination = '../PicsDemandes/' . $fileName;
     
     // Move file to destination path
     if (move_uploaded_file($imagePath, $destination)) {
