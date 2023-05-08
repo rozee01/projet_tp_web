@@ -1,6 +1,6 @@
 body{
     background: #e7ebd6;
-    overflow-x: hidden;
+    
   }
   
   * {
@@ -9,6 +9,7 @@ body{
   box-sizing: border-box;
   font-family: 'rubik', sans-serif;
   scroll-behavior: smooth;
+  
   }
   
   /*navbar start */
@@ -179,13 +180,15 @@ body{
   }
   
   .left {
+    width: 70%;
+  }
+  .container{
+    max-width: 1316px;
+  }
+  /* .right {
     width: 50%;
   }
-  
-  .right {
-    width: 50%;
-  }
-  
+   */
   /* partie quick fqcts start */
   .titree {
     color: #ab1b3f;
@@ -215,6 +218,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    margin-left: 20px;
     transition: background-color 0.3s ease-in-out;
   }
   
@@ -373,7 +377,7 @@ body{
   .info input:hover{
     background-color: #ec9baf;
   }
-  .right p {
+  /* .right p {
     text-align: center;
     margin-top: 30px;
     font-weight: 600;
@@ -383,7 +387,7 @@ body{
   
   .right p span {
     color: #ab1b3f;
-  }
+  } */
 #last-information textarea {
     background-color: #dcdcdc;
 }
@@ -410,4 +414,7 @@ body{
     background-color: #E7EBD6;
     color: #3466c2;
     font-weight: 700;
+  }
+  .row {
+    height: 504px;
   }

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../pays/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
     <script src="readmore.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-sugg.css">
     <link rel="stylesheet" href="../pays/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -256,7 +256,7 @@
 
 
 
-        <div class="right">
+        <!-- <div class="right">
             <br>
             <br>
             <div class="row">
@@ -279,7 +279,7 @@
             <input type="file" name="image" id="myInputchange3" style="display:none">
             <button style="width: 15%;" type="button" class="btn-upload" onclick="document.getElementById('myInputchange3').click()">3</button>
 
-        </div>
+        </div> -->
     </div>
 
     <!--quick facts et image end -->
