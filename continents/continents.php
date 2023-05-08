@@ -1,6 +1,16 @@
 <?php 
 // start the session 
 session_start();
+$role=$_SESSION['role'];
+if (isset($_SESSION['message'])) {
+    ?><div id="message"  class="alert alert-success alert-dismissible" role="alert">
+    
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  
+    <?php
+}
+
 $continentName=$_GET['name'];
 include_once('../Repositories/CountriesRepository.php')
 ?>
@@ -29,6 +39,9 @@ include_once('../Repositories/CountriesRepository.php')
         <?php
     $Continent= new CountriesRepository();
     $countries = $Continent->findAll(['continent' => $continentName]);
+
+    /* boucle sur les lignes de la table countries pour afficher countries de chaque continent */ 
+
     foreach ($countries as $country) {
     $country_elements = ['continent',
         'name', 'description', 'image'];
@@ -56,46 +69,19 @@ include_once('../Repositories/CountriesRepository.php')
                 </div>
             </div>
             <?php }   
-            // retrieve the role from the session
-                $role="Admin";
-                //if Admin, on reçoit les demandes d'ajout 
+               // Si Admin on peut acceder a la des suggestion d'un pays et valider ou refuser
+           
+            
             if($role == "Admin")
             {
-                include_once('../Repositories/DemandeRepository.php');
-            $DemandeRepository= new DemandeRepository();
-             $Demandes = $DemandeRepository->findAll(['continent' => $continentName]);
+                include_once('ListeSuggestions.php');
+               
+            } 
 
-    foreach ($Demandes as $Demande) {
-    $Demande_elements = ['continent',
-        'name', 'description', 'image'];
-    foreach ($Demande_elements as $element) {
-        //on associe chaque element l colonne mteeou 
-        ${$element} = $Demande->{$element};
-    } ?>
-    
-    <div class="col-lg-4 col-md-6">
-                <div class="destination-box">
-                    <div class="card">
-                        <img src=<?= $image ?> class="img-fluid">
-                        <div class="descriptions bg-light">
-                            <h1><?= $name ?></h1>
-                            <p>
-                          <?= $description ?>
-                            </p>
-
-                            <button style="margin-left: 10%;">
-                                <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href=<?php $reference = "../pays/pays.php?name=".$name ; echo $reference ; ?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php } } 
             // Si !Admin on peut faire une suggestion d'un pays
         else 
              { 
-             include_once('Suggestion.php'); }?>
+             include_once('FaireSuggestion.php'); }?>
             
         </div>
             
@@ -116,6 +102,24 @@ include_once('../Repositories/CountriesRepository.php')
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+  // Get the message element
+  var messageElement = document.getElementById('message');
+
+  // Set the message from the session variable
+  messageElement.innerHTML = '<?php echo $_SESSION['message']; ?>';
+
+  // Hide the message after 5 seconds
+  setTimeout(function() {
+    messageElement.style.display = 'none';
+  }, 5000); // 5000 milliseconds = 5 seconds
+
+  // Clear the session variable after displaying the message
+  setTimeout(function() {
+    <?php unset($_SESSION['message']); ?>
+  }, 5000); // 5000 milliseconds = 5 seconds
+</script>
+
 </body>
 
 </html>
