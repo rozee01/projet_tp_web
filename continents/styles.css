@@ -4,8 +4,8 @@
   box-sizing: border-box;
   font-family: "rubik", sans-serif;
   scroll-behavior: smooth;
+  
 }
-
 /*navbar start */
 .navbar-nav {
   margin-left: 200px;
@@ -43,7 +43,7 @@
 }
 /*top destinations*/
 body {
-  background-color: #E7EBD6;
+  background-color: #E7EBD6 !important;
 }
 
 .destination-box {
@@ -266,7 +266,7 @@ h3 {
   transform: scale(0.97);
 }
 
-.card:hover img {
+.card:hover #animation-img {
   transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transform: scale(1.6) rotate(20deg);
   filter: blur(3px);
@@ -296,9 +296,32 @@ h3 {
   outline: none;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   transition: all 0.5s ease-in-out;
+  border-radius: 10px;
 }
 
 .card button:hover {
-  transform: scale(0.95) translateX(-5px);
+  transform: scale(0.95) ;
   transition: all 0.5s ease-in-out;
+  background-color: #E7EBD6;
+  color: #ab1b3f;
+  font-weight: 700;
+}
+.button-verif-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.button-verif-container button {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-verif-container button img:hover {
+  filter: grayscale(90%) invert(100%) ;
 }
