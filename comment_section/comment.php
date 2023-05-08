@@ -1,16 +1,23 @@
 <?php
 include 'config.php';
-include_once '../isAuthentified.php';
-
+$alert = "";
+if (isset($_SESSION['user'])) {
+  $username = $_SESSION['user'];
+}
 
 if (isset($_POST['send'])) {
-  $name = $_POST['name'];
-  $comment = $_POST['comment'];
-
-  $sql = "INSERT INTO comments_table (name, comment) VALUES ('$name', '$comment')";
-}
-if (isset($sql) && $conn->query($sql) === TRUE) {
-  echo "";
+    $comment = trim($_POST['comment']);
+    if ($comment != "") {
+      if (isset($username)) {
+        $sql = "INSERT INTO reviews (name, comment) VALUES ('$username','$comment')";
+        $conn->query($sql);
+      } else {
+        $alert = "You cannot post a review without logging in";
+      }
+    } else {
+      $alert = "You cannot post an empty review";
+    
+  }
 }
 
 
@@ -29,7 +36,7 @@ if (isset($sql) && $conn->query($sql) === TRUE) {
 <body>
   <!-- Contenedor Principal -->
   <div class="comments-container">
-    <h2 id="comment-title">Comments</h2>
+    <h2 id="comment-title">Reviews</h2>
 
     <ul id="comments-list" class="comments-list">
       <li>
@@ -49,9 +56,7 @@ if (isset($sql) && $conn->query($sql) === TRUE) {
               <i class="fa fa-heart"></i>
             </div>
             <div class="comment-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-              omnis animi et iure laudantium vitae, praesentium optio,
-              sapiente distinctio illo?
+              I recently visited <?= $name ?> and it was an incredible experience! The culture, the food, and the people were all amazing. I would highly recommend anyone to visit this beautiful country.
             </div>
           </div>
         </div>
@@ -73,9 +78,7 @@ if (isset($sql) && $conn->query($sql) === TRUE) {
                 <i class="fa fa-heart"></i>
               </div>
               <div class="comment-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Velit omnis animi et iure laudantium vitae, praesentium optio,
-                sapiente distinctio illo?
+                I completely agree! I went to <?= $name ?> a few years ago and it was one of the best trips of my life. The architecture, the natural scenery, and the technology were all so fascinating. I would love to go back someday.
               </div>
             </div>
           </li>
@@ -96,9 +99,7 @@ if (isset($sql) && $conn->query($sql) === TRUE) {
                 <i class="fa fa-heart"></i>
               </div>
               <div class="comment-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Velit omnis animi et iure laudantium vitae, praesentium optio,
-                sapiente distinctio illo?
+                Yes, <?= $name ?> is truly a unique and wonderful place. I was particularly impressed by how clean and organized everything was, even in the bustling cities like <?= $titlePlace3 ?> . The attention to detail and the respect for tradition are also very admirable. I'm already planning my next trip back!
               </div>
             </div>
           </li>
@@ -107,7 +108,8 @@ if (isset($sql) && $conn->query($sql) === TRUE) {
       <!-- add comment -->
       <?php
 
-      $sql = "SELECT name, comment, date FROM comments_table";
+
+      $sql = "SELECT name , comment, date FROM reviews";
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
@@ -125,7 +127,7 @@ if (isset($sql) && $conn->query($sql) === TRUE) {
               <div class="comment-box">
                 <div class="comment-head">
                   <h6 class="comment-name">
-                    <a href="http://creaticode.com/blog"><?php echo $row['name'] ?></a>
+                    <a href="#"><?php echo $row['name'] ?></a>
                   </h6>
 
                   <span><?php $current_time = time();
@@ -154,16 +156,51 @@ if (isset($sql) && $conn->query($sql) === TRUE) {
         <!-- Comment to send -->
         <div style="margin: 14px;
     margin-right: -15px; ">
-          <form action="#" method="post">
-            <input type="text" name="comment" class="commentsend" placeholder="Write your comment here" />
-            <input type="text" class="name" name="name" placeholder="Write your name">
+          <form action="#" method="post" onsubmit="return redirectToLoginPage()">
+            <input type="text" id="comment" name="comment" class="commentsend" placeholder="Write your comment here" />
 
             <button type="submit" class="send-btn" name="send">
               Post
             </button>
           </form>
+          <p style="
+          color: red;
+          margin-left: 15px;
+          margin-top: 8px;">
+            <?php echo $alert ?>
+          </p>
         </div>
   </div>
+  <script>
+    function redirectToLoginPage() {
+      <?php
+         if (isset($_POST['send']) && isset($_SESSION['user']) ) {
+          $comment = trim($_POST['comment']);
+          if ($comment != "") {
+            if (isset($username)) {
+              $sql = "INSERT INTO reviews (name, comment) VALUES ('$username','$comment')";
+              $conn->query($sql);
+            } else {
+              $alert = "You cannot post a review without logging in";
+            }
+          } else {
+            $alert = "You cannot post an empty review";
+          
+        }
+      } else {
+         ?>
+      // Check if the user is logged in
+      if ( <?php echo !isset($_SESSION['user']) ? 'true' : 'false'; ?> ) {
+        // Redirect the user to the login page
+        window.location.href = "../Login.php";
+        return false;
+      } else 
+      {
+        return true;} // Allow the form to be submitted normally
+    }
+  <?php } ?>
+  </script>
+
 </body>
 
 </html>
