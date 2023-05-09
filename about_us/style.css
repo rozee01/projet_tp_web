@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'rubik', sans-serif;
+  font-family: "rubik", sans-serif;
 }
 
 header {
@@ -12,30 +12,27 @@ header {
   text-align: center;
 }
 /*navbar start */
-.navbar-nav{
-	margin-left:200px;
+.navbar-nav {
+  margin-left: 200px;
 }
 
 #logo {
-	font-size:  45px;
-	font-weight: 700;
-	color: #195108;
-	text-shadow: 0px 2px 2px #ffffff;
-
+  font-size: 45px;
+  font-weight: 700;
+  color: #195108;
+  text-shadow: 0px 2px 2px #ffffff;
 }
 .nav-item .nav-link {
-	font-family: 'Rubik', sans-serif;
-	font-size:16 px;
-	font-weight:700;
-	letter-spacing:2px;
-	color: #AB1B3F;
-	margin-left : 2rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 16 px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ab1b3f;
+  margin-left: 2rem;
 }
-.nav-item .nav-link:hover{
-	background:#AB1B3F;
-	color:#f2f2f2;
-
-
+.nav-item .nav-link:hover {
+  background: #ab1b3f;
+  color: #f2f2f2;
 }
 /*navbar end */
 
@@ -140,9 +137,8 @@ body {
   width: 65%;
   height: 65%;
   display: grid;
-  column-gap: 20px;
-  row-gap: 5px;
-
+  column-gap: 5%;
+  row-gap: 8%;
   grid-column: 2;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
