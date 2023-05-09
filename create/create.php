@@ -3,8 +3,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
 	<title>Become a TOURBUDDY</title>
 	<?php $path="../";	
+
 	?>
   <?php include_once ('../dependancies.php') ; ?>
 	<link rel="stylesheet" href="style.css">
@@ -27,7 +29,8 @@ $userRepository = new UserRepository();
   <!--navbar end-->
   <pp>
 <div class="container">
-		<h1>Become a Tourbuddy</h1>
+		<img src="../pics/output-onlinepngtools.png" class="avatar" />
+		<h1>Sign In</h1>
 		<p>Create an account to start sharing your experience with the world .</p>
 		<form action="addUser.php" method="post">
 			<label for="username">Username</label>
@@ -43,7 +46,11 @@ $userRepository = new UserRepository();
 		</form>
 		<p>Already have an account? <a href="../Login.php">Log in</a></p>
 	</div>
+
 	</pp>
+
+
+	<?php include_once('../footer.php') ; ?>
 
 </body>
 </html>
