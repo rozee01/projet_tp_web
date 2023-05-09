@@ -49,7 +49,7 @@
           <?php
           if (isset($_SESSION['user'])) {
             echo '<li class="nav-item">
-            <a class="nav-link" href="logout.php" id="login"> LogOut </a> </li>';
+            <a class="nav-link" href="../logout.php" id="login"> LogOut </a> </li>';
           }
           ?>
 
