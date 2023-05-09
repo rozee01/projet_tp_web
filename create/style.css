@@ -1,30 +1,36 @@
-
-h1{
-    font-family: 'Rubik', sans-serif;
-}
 body {
 	font-family: 'Rubik', sans-serif;
 	background-color: #f6f8fa;
 }
 
 .container {
-	/*box-sizing: border-box;*/
-	max-width: 400px;
-	margin-top:150px;
-	padding:30x;
-	background-color: #fff;
-	border: 1px solid #d1d5da;
-	border-radius: 3px;
-}
-
+    background: #fff;
+    max-width: 400px;
+	margin-top: 150px;
+	margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: block;
+  }
 h1 {
-	font-size: 28px;
+	font-family: 'Rubik', sans-serif;
 	margin-top: 0;
+	font-weight: 600;
+	text-align: center;
 }
-
+p{
+	text-align: left;
+	font-size: 1em;
+}
 form {
-	display: flex;
-	flex-direction: column;
+	text-align: left;
 }
 
 label {
@@ -34,11 +40,12 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-	padding: 10px;
-	margin-bottom: 15px;
-	border-radius: 3px;
-	border: 1px solid #d1d5da;
+input[type="password"],
+input[type="submit"] {
+	width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+	border-width: 1px;
 }
 
 button {
@@ -48,6 +55,8 @@ button {
 	border-radius: 10px;
 	border: none;
 	cursor: pointer;
+	width: 100%;
+	margin-bottom: 7px;
 }
 
 button:hover {
@@ -58,17 +67,12 @@ a {
 	color: #1494ab;
 	text-decoration: none;
 }
-body {
+/* body {
 	max-width: 500px;
 	margin: 0 auto;
 	padding: 20px;
-	background-image: url('/pics/tour.png');
-	background-size: auto;
-	background-position: center;
-    background-repeat: repeat;
-	border: 1px solid #d1d5da;
 	border-radius: 4px;
-}
+} */
 /*navbar start */
 .navbar-nav{
 	margin-left:200px;
@@ -137,3 +141,40 @@ body {
 	line-height: 1.5;
   }
   /* footer end */
+  /* copyright start */
+  .copyright {
+	font-size: 14px;
+	color: #e7ebd6;
+	text-align: center;
+	width: 100%;
+	border-top: 1px solid #e7ebd6;
+	margin-trim: 20px;
+	display: grid;
+  }
+  .div-copyright {
+	background-color: #0c2903;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+  }
+  /* copyright end */
+  /* backToTopBtn start */
+  #backToTopBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+  }
+  
+  #backToTopBtn:hover {
+	transform: scale(1.05);
+	animation: wave 1.3s ease-in-out infinite;
+  }
+  /* backToTopBtn end */
+  /* ///////////////////////////////footer css ends////////////////////////////////////// */
