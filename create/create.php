@@ -27,7 +27,7 @@ $userRepository = new UserRepository();
   <?php include_once('../header.php') ; ?>
   <!--navbar end-->
 <div class="container">
-		<h1>Become a Tourbuddy</h1>
+		<h1>Sign In</h1>
 		<p>Create an account to start sharing your experience with the world .</p>
 		<form action="addUser.php" method="post">
 			<label for="username">Username</label>
