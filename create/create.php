@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Become a TOURBUDDY</title>
+	<title>Become a TourBuddy</title>
 	<?php $pathindex="../";
 	$patht="../";$pathab="../";$pathlogin="../";$pathsignin="../";
 	?>
@@ -26,8 +26,9 @@ $userRepository = new UserRepository();
   <!--navbar start-->
   <?php include_once('../header.php') ; ?>
   <!--navbar end-->
-<div class="container" >
-		<h1>Become a Tourbuddy</h1>
+<div class="container">
+		<img src="../pics/output-onlinepngtools.png" class="avatar" />
+		<h1>Sign In</h1>
 		<p>Create an account to start sharing your experience with the world .</p>
 		<form action="addUser.php" method="post">
 			<label for="username">Username</label>
@@ -43,6 +44,6 @@ $userRepository = new UserRepository();
 		</form>
 		<p>Already have an account? <a href="../Login.php">Log in</a></p>
 	</div>
-
+	<?php include_once('../footer.php') ; ?>
 </body>
 </html>
