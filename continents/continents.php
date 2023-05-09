@@ -64,7 +64,11 @@ include_once('../Repositories/CountriesRepository.php')
 
                             <button style="margin-left: 10%;">
                                 <i class="fab fa-youtube"></i>
-                                <a class="nav-link" style="text-decoration:none; color: light; " href=<?php $reference = "../pays/pays.php?name=".$name."&demande=false" ; echo $reference ; ?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
+                                <a class="nav-link" style="text-decoration:none; color: light; " href=<?php 
+    $name_encoded = urlencode($name);
+    $reference = "../pays/pays.php?name=".$name_encoded."&demande=false";
+    echo $reference;
+?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
                             </button>
                         </div>
                     </div>
