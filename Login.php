@@ -5,11 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 if (isset($_SESSION['user'])) {
   header('location:index.php');
 }
-$pathindex = "./";
-$patht = "./";
-$pathab = "./";
-$pathlogin = "./";
-$pathsignin = "./";
+$path= "./";
 
 include_once './create/access.php';
 

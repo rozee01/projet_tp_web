@@ -36,8 +36,8 @@ foreach ($tips as $tip) {
     ${$tip} = $Tips["{$tip}"];
 }
 
- $pathindex="../";
-	$patht="../";$pathab="../";$pathlogin="../";$pathsignin="../";
+ $path="../";
+	
 	?>
  
 <html>
@@ -45,19 +45,10 @@ foreach ($tips as $tip) {
 <head>
     <title>let's visit <?= $country ?></title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
-    <script src="readmore.js"></script>
+ <?php 
+    include_once('../dependancies.php'); ?>
+  <link rel="stylesheet" href="../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="pays.css">
-    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="../pics/logo.png">
-
     <style>
         .background {
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(<?= $image ?>);
@@ -68,6 +59,7 @@ foreach ($tips as $tip) {
             height:850px;
             margin-bottom: 180px;
         }
+        
     </style>
     <link rel="stylesheet" href="../comment_section/comment.css" />
 
@@ -88,7 +80,6 @@ foreach ($tips as $tip) {
             <p id="paragraphe1">
                 <?= $paragraph ?>
             </p>
-            <p onclick="readMore()" id="myBtn">Read more</p>
             <br />
             <br />
             <br />
@@ -268,7 +259,7 @@ foreach ($tips as $tip) {
 
 
     <!--information start-->
-    <div class="container">
+    <div class="container" id="info">
         <div class="titree">
             <h2>Flights </h2>
         </div>
@@ -280,13 +271,14 @@ foreach ($tips as $tip) {
         <p><br><?= $safety ?>
         </p>
         <div class="titree">
-            <h2>Budget</h2>
+            <h2>Budget </h2>
         </div>
         <p><br><?= $budget ?>
         </p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <!--information end-->
-
+    
 
     <!--video-->
     <div class="container" id="vid">

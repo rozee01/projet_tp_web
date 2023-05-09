@@ -4,8 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Become a TOURBUDDY</title>
-	<?php $pathindex="../";
-	$patht="../";$pathab="../";$pathlogin="../";$pathsignin="../";
+	<?php $path="../";	
 	?>
   <?php include_once ('../dependancies.php') ; ?>
 	<link rel="stylesheet" href="style.css">
@@ -26,6 +25,7 @@ $userRepository = new UserRepository();
   <!--navbar start-->
   <?php include_once('../header.php') ; ?>
   <!--navbar end-->
+  <pp>
 <div class="container">
 		<h1>Become a Tourbuddy</h1>
 		<p>Create an account to start sharing your experience with the world .</p>
@@ -43,6 +43,7 @@ $userRepository = new UserRepository();
 		</form>
 		<p>Already have an account? <a href="../Login.php">Log in</a></p>
 	</div>
+	</pp>
 
 </body>
 </html>
