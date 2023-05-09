@@ -1,48 +1,77 @@
 body{
   background: #e7ebd6;
   overflow-x: hidden;
+ 
 }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'rubik', sans-serif;
-scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'rubik', sans-serif;
+	scroll-behavior: smooth;
+	/* overflow-x: hidden; */
 }
-
 /*navbar start */
-.navbar-nav {
-  margin-left: 200px;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  font-family: 'rubik', sans-serif;
+.navbar-nav{
+	margin-left:200px;
 }
 
 #logo {
-  font-size: 45px;
-  font-weight: 700;
-  color: #195108;
-  text-shadow: 0px 2px 2px #ffffff;
+	font-size:  45px;
+	font-weight: 700;
+	color: #195108;
+	text-shadow: 0px 2px 2px #ffffff;
+
 }
 .nav-item .nav-link {
-  font-family: "Rubik", sans-serif;
-  font-size: 16 px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #AB1B3F;
-  margin-left: 2rem;
+	font-family: 'Rubik', sans-serif;
+	font-size:16 px;
+	font-weight:700;
+	letter-spacing:2px;
+	color: #AB1B3F;
+	margin-left : 2rem;
 }
-.nav-item .nav-link:hover {
-  background: #AB1B3F;
-  color: #f2f2f2;
+.nav-item .nav-link:hover{
+	background:#AB1B3F;
+	color:#f2f2f2;
+
+
 }
 /*navbar end */
+
+/*the logo of the nav bar moves*/
+.img-fluid {
+  max-height: 400px;
+  object-fit: cover;
+  width: 80%;
+  transition: .2s linear;
+ 
+}
+.img-fluid:hover{
+  transform:scale(1.1);
+}
+.bande-container {
+display: flex;
+justify-content: center;
+width: 100%;
+max-width: 1200px;
+}
+
+.bande-item {
+display: flex;
+height: 64px;
+}
+
+.bande-item img {
+max-width: 100%;
+height: 64px;
+margin-right: 15px;
+}
+.bande-item p {
+font-size: 14px;
+max-width: 300px;
+}
 
 /*partie home start*/
 
@@ -118,7 +147,7 @@ scroll-behavior: smooth;
   box-shadow: 2px 2px 20px rgb(75, 73, 73);
   height: 350px;
   width: 380px;
-  overflow: hidden;
+ /* overflow: hidden; */
   margin: 20px;
   background: rgb(229, 217, 217);
 }
@@ -251,7 +280,9 @@ iframe {
   width: 100%;
   border-radius: 8px;
 }
-
+#info{
+  padding:100px;
+}
 /* partie quick facts et image end */
 /* ////////////////////////footer css///////////////////////// */
 footer {
