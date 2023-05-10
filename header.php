@@ -27,6 +27,7 @@
                   echo $reference;?>>North America</a></li>
               <li><a class="dropdown-item" href=<?php 
                   //kifkif l south america
+                  //comment test
                   $name_encoded = urlencode("South America");
                   $reference = "../continents/continents.php?name=".$name_encoded."&demande=false";
                   echo $reference;?>>South America</a></li>
