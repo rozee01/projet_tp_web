@@ -9,6 +9,7 @@ include_once('uploadImage.php');
 $Demandes = new DemandeRepository();
 
 if (isset($_SESSION['form_data'])) {
+
   $Demande = $Demandes->Create($_SESSION['form_data']);
 $CountryName=$_SESSION['form_data']['name'];
 $location="Location:/continents/SuggestionDetails.php?name=".$CountryName."&continent=".$_SESSION['form_data']['continent'] ;
@@ -38,10 +39,3 @@ else {
       $location="Location:/continents/SuggestionDetails.php?name=".$CountryName."&continent=".$_POST['continent'] ;
       header($location );
   } }
-
-    
-
-
-    
-
-
