@@ -3,8 +3,8 @@
 
 <head>
 
-  <?php $pathindex="./";
-	$patht="./";$pathab="./";$pathlogin="./";$pathsignin="./";
+  <?php $path="./";
+	
 	?>
  
     <meta charset="UTF-8">
@@ -15,8 +15,14 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <!-- including general dependancies -->
-    <?php include_once ('dependancies.php') ; ?>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="../pics/logo.png">    <link rel="stylesheet" href="../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+
 
     <link rel="stylesheet" href="travel-advice/styles.css">
 </head>

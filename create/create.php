@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Become a TourBuddy</title>
-	<?php $pathindex="../";
-	$patht="../";$pathab="../";$pathlogin="../";$pathsignin="../";
+
+	<title>Become a TOURBUDDY</title>
+	<?php $path="../";	
+
 	?>
   <?php include_once ('../dependancies.php') ; ?>
 	<link rel="stylesheet" href="style.css">
@@ -26,6 +26,7 @@ $userRepository = new UserRepository();
   <!--navbar start-->
   <?php include_once('../header.php') ; ?>
   <!--navbar end-->
+  <pp>
 <div class="container">
 		<img src="../pics/output-onlinepngtools.png" class="avatar" />
 		<h1>Sign In</h1>
@@ -44,6 +45,11 @@ $userRepository = new UserRepository();
 		</form>
 		<p>Already have an account? <a href="../Login.php">Log in</a></p>
 	</div>
+
+	</pp>
+
+
 	<?php include_once('../footer.php') ; ?>
+
 </body>
 </html>
