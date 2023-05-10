@@ -33,7 +33,7 @@
             
           <li class="nav-item">
             <?php
-
+            //verifier s'il est connecté ou non
             if (!isset($_SESSION['user'])) {
               echo '<a class="nav-link" href="'.$path.'Login.php" id="login">Login';
             } else {
