@@ -4,6 +4,7 @@
 	box-sizing: border-box;
     font-family: 'rubik', sans-serif;
 	scroll-behavior: smooth;
+	/* overflow-x: hidden; */
 }
 /*navbar start */
 .navbar-nav{
