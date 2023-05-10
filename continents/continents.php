@@ -16,6 +16,9 @@ if (isset($_SESSION['message'])) {
 $continentName=$_GET['name'];
 include_once('../Repositories/CountriesRepository.php')
 ?>
+<?php $path='../';
+include_once('../dependancies.php') ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,14 +27,24 @@ include_once('../Repositories/CountriesRepository.php')
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $continentName ?></title>
-    <?php include_once('../dependancies.php') ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="../pics/logo.png">    <link rel="stylesheet" href="../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+
+
+
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <?php include_once('../continents/header2.php') ?>
+    <?php include_once('../header.php') ;$path='../';
+    
+    ?>
 
     <!--top destinations start-->
 
@@ -91,12 +104,7 @@ include_once('../Repositories/CountriesRepository.php')
             
         </div>
             
-        <button type="button" class="lien" >
-            <i class="fab fa-youtube"></i>
-            <a class="nav-item nav-link" style="text-decoration:none; color: light; " href="../index.php">
-            Back to the continents 
-            </a>
-        </button>
+       
    
         </div>
     
