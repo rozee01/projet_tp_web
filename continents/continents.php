@@ -73,15 +73,14 @@ include_once('../dependancies.php');
                 foreach ($country_elements as $element) {
                     ${$element} = $country->{$element};
                 }
-            ?>
+                ?>
 
                 <div class="col-lg-4 col-md-6">
                     <div class="destination-box">
                         <div class="card">
                             <img src=<?= $image ?> class="img-fluid">
                             <div class="descriptions bg-light">
-                                <h1 style="    font-size: 35px;
-    font-weight: bold;"><?= $name ?></h1>
+                                <h1 style="    font-size: 35px;font-weight: bold;"><?= $name ?></h1>
                                 <p>
                                     <?= $description ?>
                                  </p>
@@ -89,15 +88,16 @@ include_once('../dependancies.php');
                             <button style="bottom: 60px;" class="button-to-details">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href=<?php 
-    $name_encoded = urlencode($name);
-    $reference = "../pays/pays.php?name=".$name_encoded."&demande=false";
-    echo $reference;
-?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
+                            $name_encoded = urlencode($name);
+                             $reference = "../pays/pays.php?name=".$name_encoded."&demande=false";
+                                echo $reference;
+                            ?> > Know more about <?php if($name =='The Great Barrier Reef') {echo 'this country'; }else {echo $name ;}?></a>
                             </button>
 
                         </div>
                     </div>
                 </div>
+            </div>
             <?php }
             // Si Admin on peut acceder a la des suggestion d'un pays et valider ou refuser
 
@@ -112,14 +112,14 @@ include_once('../dependancies.php');
                 include_once('FaireSuggestion.php');
             } ?>
 
-        </div>
+        
 
 
 
     </div>
 
     <!--top destionations end-->
-
+    </div>
     <?php include_once('../footer.php') ?>
 
     <!-- Include Bootstrap JS -->
