@@ -9,10 +9,10 @@ if ($_GET['demande'] == "true") {
 } else {
     require_once('../Repositories/CountryDetailsRepository.php');
     $DetailsRepository = new CountryDetailsRepository();
-}
+
 require_once('../Repositories/CountryTipsRepository.php');
 $TipsRepository = new CountryTipsRepository();
-
+}
 // Associer chaque element de la table CountryDetails a sa valeur dans la base de données selon le nom du pays 
 
 
