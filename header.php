@@ -16,20 +16,12 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Destinations</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Africa"?>>Africa</a></li>
-              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Asia"?>>Asia</a></li>
-              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Australia"?>>Australia</a></li>
-              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Europe"?>>Europe</a></li>
-              <li><a class="dropdown-item" href=<?php 
-                  //code bch l path yet'hazz North America kemel mch ken North America
-                  $name_encoded = urlencode("North America");
-                  $reference = "../continents/continents.php?name=".$name_encoded."&demande=false";
-                  echo $reference;?>>North America</a></li>
-              <li><a class="dropdown-item" href=<?php 
-                  //kifkif l south america
-                  $name_encoded = urlencode("South America");
-                  $reference = "../continents/continents.php?name=".$name_encoded."&demande=false";
-                  echo $reference;?>>South America</a></li>
+              <li><a class="dropdown-item" href="continents/dest_africa.php">Africa</a></li>
+              <li><a class="dropdown-item" href="continents/dest_as.php">Asia</a></li>
+              <li><a class="dropdown-item" href="continents/dest_eu.php">Australia</a></li>
+              <li><a class="dropdown-item" href="continents/dest_eu.php">Europe</a></li>
+              <li><a class="dropdown-item" href="continents/dest_amn.php">North America</a></li>
+              <li><a class="dropdown-item" href="continents/dest_ams.php">South America</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -41,7 +33,7 @@
             
           <li class="nav-item">
             <?php
-
+            //verifier s'il est connecté ou non
             if (!isset($_SESSION['user'])) {
               echo '<a class="nav-link" href="'.$path.'Login.php" id="login">Login';
             } else {

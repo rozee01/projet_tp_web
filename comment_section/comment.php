@@ -183,7 +183,7 @@ if (isset($_POST['send'])) {
         </div>
   </div>
   <script>
-    function redirectToLoginPage() {
+function redirectToLoginPage() {
       <?php
          if (isset($_POST['send']) && isset($_SESSION['user']) ) {
           $comment = trim($_POST['comment']);
@@ -203,13 +203,15 @@ if (isset($_POST['send'])) {
       // Check if the user is logged in
       if ( <?php echo !isset($_SESSION['user']) ? 'true' : 'false'; ?> ) {
         // Redirect the user to the login page
+        <?php $_SESSION['precedent']='location:../pays/pays.php?name='.$name.'&demande=false' ; ?>
+    
         window.location.href = "../Login.php";
         return false;
       } else 
       {
         return true;} // Allow the form to be submitted normally
-    }
-  <?php } ?>
+    
+  <?php } ?>}
   </script>
 
 </body>

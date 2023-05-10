@@ -27,7 +27,8 @@ if (isset($_POST['envoi'])) {
             $_SESSION['user'] = ucfirst($user);
             $_SESSION['role'] = $result['role'] ;
             $isAuthenticated = true;
-            header('location:index.php');
+            if (isset($_SESSION['precedent'])) { $location=$_SESSION['precedent'] ; header($location ); }
+            else {header('location:index.php');}
         }
         if (!$isAuthenticated)
             header('Location:login.php?error=Veuillez vérifiez vos credentials');
