@@ -1,9 +1,18 @@
 <?php
 // start the session 
 session_start();
-if(isset($_SESSION['user'])){
-    
-    $role=$_SESSION['role'];}
+if (isset($_SESSION['user'])) {
+
+    $role = $_SESSION['role'];
+}
+if (isset($_SESSION['message'])) {
+?><div id="message" class="alert alert-success alert-dismissible" role="alert">
+
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+<?php
+}
 
 $continentName=$_GET['name'];
 include_once('../Repositories/CountriesRepository.php')
