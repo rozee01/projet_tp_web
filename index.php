@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- hedha comment zyeda zeyda -->
 <head>
-<?php $pathindex="./";
-	$patht="./";$pathab="./";$pathlogin="./";$pathsignin="./";
+<?php $path="./";
+	
 	?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
 
   <div class="home">
     <div class="content">
-      <h2 id="welcome">Welcome dear <?php if (!isset($_SESSION['user'])){echo 'TourBuddy';} else {echo $_SESSION['user'];} ?> to our travel blog,</h2>
+      <h2 id="welcome">Welcome dear <?php if (!isset($_SESSION['user'])){echo 'TourBuddy';} else {echo $_SESSION['user'];} ?> to our travel social network,</h2>
       <p><br> where we share our passion for exploring the world and discovering new cultures,
         foods, and adventures.Whether you're a seasoned traveler or just starting out,
         we've got something for you. Our blog is filled with travel tips, insider insights,

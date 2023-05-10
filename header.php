@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <img src="../pics/tour.png" style="width:140px;">
 
-    <a class="navbar-brand" href=<?php echo $pathindex."index.php"?> id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
+    <a class="navbar-brand" href=<?php echo $path."index.php"?> id="logo" style="font-family: 'Rubik', sans-serif;">TourBuddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,32 +16,34 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Destinations</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="continents/dest_africa.php">Africa</a></li>
-              <li><a class="dropdown-item" href="continents/dest_as.php">Asia</a></li>
-              <li><a class="dropdown-item" href="continents/dest_eu.php">Australia</a></li>
-              <li><a class="dropdown-item" href="continents/dest_eu.php">Europe</a></li>
-              <li><a class="dropdown-item" href="continents/dest_amn.php">North America</a></li>
-              <li><a class="dropdown-item" href="continents/dest_ams.php">South America</a></li>
+              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Africa"?>>Africa</a></li>
+              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Asia"?>>Asia</a></li>
+              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Australia"?>>Australia</a></li>
+              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Europe"?>>Europe</a></li>
+              <li><a class="dropdown-item" href=<?php 
+                  //code bch l path yet'hazz North America kemel mch ken North America
+                  $name_encoded = urlencode("North America");
+                  $reference = "../continents/continents.php?name=".$name_encoded."&demande=false";
+                  echo $reference;?>>North America</a></li>
+              <li><a class="dropdown-item" href=<?php 
+                  //kifkif l south america
+                  $name_encoded = urlencode("South America");
+                  $reference = "../continents/continents.php?name=".$name_encoded."&demande=false";
+                  echo $reference;?>>South America</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link " href=<?php echo $patht."travel-advice.php"?> role="button">Travel Advice</a>
+            <a class="nav-link " href=<?php echo $path."travel-advice.php"?> role="button">Travel Advice</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=<?php echo $pathab."about_us/aboutus.php"?>>About Us</a>
+            <a class="nav-link" href=<?php echo $path."about_us/aboutus.php"?>>About Us</a>
           </li>
-          <li class="nav-item dropdown" >
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Compte</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href=<?php echo $pathlogin."Login.php"?>>Log In</a></li>
-              <li><a class="dropdown-item" href=<?php echo $pathsignin."create/create.php"?>>Sign In</a></li>
-            </ul>
-          </li>     
+            
           <li class="nav-item">
             <?php
 
             if (!isset($_SESSION['user'])) {
-              echo '<a class="nav-link" href="'.$pathlogin.'Login.php" id="login">Login';
+              echo '<a class="nav-link" href="'.$path.'Login.php" id="login">Login';
             } else {
               echo '<a class="nav-link" >', $_SESSION['user'];
             } ?></a>

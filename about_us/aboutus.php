@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<?php $pathindex="../";
-	$patht="../";$pathab="../";$pathlogin="../";$pathsignin="../";
+<?php $path="../";
+
 	?>
 <head>
   <meta charset="utf-8" />
@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="../styles.css" />
+  <!-- <link rel="stylesheet" href="../styles.css" /> -->
 </head>
 
 <body>
