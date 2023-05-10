@@ -20,8 +20,16 @@
               <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Asia"?>>Asia</a></li>
               <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Australia"?>>Australia</a></li>
               <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=Europe"?>>Europe</a></li>
-              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=North America"?>>North America</a></li>
-              <li><a class="dropdown-item" href=<?php echo $path."continents/continents.php?name=South America"?>>South America</a></li>
+              <li><a class="dropdown-item" href=<?php 
+                  //code bch l path yet'hazz North America kemel mch ken North America
+                  $name_encoded = urlencode("North America");
+                  $reference = "../continents/continents.php?name=".$name_encoded."&demande=false";
+                  echo $reference;?>>North America</a></li>
+              <li><a class="dropdown-item" href=<?php 
+                  //kifkif l south america
+                  $name_encoded = urlencode("South America");
+                  $reference = "../continents/continents.php?name=".$name_encoded."&demande=false";
+                  echo $reference;?>>South America</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
