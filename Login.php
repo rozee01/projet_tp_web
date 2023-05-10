@@ -25,6 +25,16 @@ include_once './create/access.php';
   <?php include_once('header.php') ?>
   <div class="login-box">
     <img src="pics/output-onlinepngtools.png" class="avatar" />
+
+  <!--ESPACE POUR LE MESSAGE D'ERREUR -->
+
+    <?php if (isset($_GET['error']))
+{
+  $message=$_GET['error'];
+  ?><div id="message"  class="alert alert-danger alert-dismissible" role="alert"><?= $message ?> </div> <?php } ?>
+
+  <!--FIN DE L'ESPACE D'ERREUR -->
+
     <h1>Log In</h1>
     <form method="post">
       <label for="username">Username </label>
@@ -40,5 +50,16 @@ include_once './create/access.php';
   <?php include_once('footer.php') ?>
   <!--<script src="home_demo.js"></script> -->
 </body>
+
+<script>
+  //FAIRE DISPARAITRE MESSAGE D'ERREUR APRES 5 SECONDES 
+
+var messageElement = document.getElementById('message');
+
+// Hide the message after 5 seconds
+setTimeout(function() {
+  messageElement.style.display = 'none';
+}, 5000); // 5000 milliseconds = 5 seconds
+</script>
 
 </html>

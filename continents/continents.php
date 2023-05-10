@@ -4,14 +4,6 @@ session_start();
 if(isset($_SESSION['user'])){
     
     $role=$_SESSION['role'];}
-if (isset($_SESSION['message'])) {
-    ?><div id="message"  class="alert alert-success alert-dismissible" role="alert">
-    
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-  
-    <?php
-}
 
 $continentName=$_GET['name'];
 include_once('../Repositories/CountriesRepository.php')
@@ -49,6 +41,16 @@ include_once('../dependancies.php') ;
     <!--top destinations start-->
 
     <div class="container">
+    <?php
+    if (isset($_SESSION['message'])) {
+    ?><div id="message"  class="alert alert-success alert-dismissible" role="alert">
+    
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  
+    <?php
+}
+?>
         <h1 class="text-center mt-5">Top Destinations to explore in <?= $continentName ?> </h1>
         <div class="row">
         <?php
