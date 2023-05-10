@@ -1,6 +1,7 @@
 <?php
 // start the session 
 session_start();
+
 if (isset($_SESSION['user'])) {
 
     $role = $_SESSION['role'];
@@ -13,6 +14,7 @@ if (isset($_SESSION['message'])) {
 
 <?php
 }
+>>>>>>>>> Temporary merge branch 2
 
 $continentName=$_GET['name'];
 include_once('../Repositories/CountriesRepository.php')
