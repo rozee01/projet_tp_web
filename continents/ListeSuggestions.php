@@ -22,10 +22,10 @@
                             <p>
                                 <?= $description ?>
                             </p>
-                            <button style="margin-left: 10%;">
+                            <button style="top: 20px;" class="button-to-details">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href=<?php
-                                    $reference="../pays/pays.php?name=" . $name."&demande=true"; echo $reference; ?>> Know more about
+                                    $reference="../pays/pays.php?name=" . $name."&demande=true"; echo $reference; ?>> Check
                                     <?php if ($name == 'The Great Barrier Reef') {echo 'this country';                                                                                                                        } else { echo $name;} ?>
                                 </a>
                             </button>

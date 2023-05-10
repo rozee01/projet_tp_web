@@ -9,7 +9,7 @@ if (isset($_POST['send'])) {
     $comment = trim($_POST['comment']);
     if ($comment != "") {
       if (isset($username)) {
-        $sql = "INSERT INTO reviews (name, comment) VALUES ('$username','$comment')";
+        $sql = "INSERT INTO reviews (name, comment,country) VALUES ('$username','$comment','$name')";
         $conn->query($sql);
       } else {
         $alert = "You cannot post a review without logging in";
@@ -31,6 +31,8 @@ if (isset($_POST['send'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>comment</title>
   <link rel="stylesheet" href="comment.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-V5iRUfPioN0J0gSBb39keETMx72x1dO/G/jljoNpB35op9rJAJm6FqUfYmz6Q8Urk4V7GqjjyCmxV7kW8PhCtw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -52,8 +54,11 @@ if (isset($_POST['send'])) {
                 <a href="http://creaticode.com/blog">Agustin Ortiz</a>
               </h6>
               <span>53 minutes ago</span>
-              <i class="fa fa-reply"></i>
-              <i class="fa fa-heart"></i>
+              <div style="
+              right: 10px;
+              position: absolute;"><i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i></div>
+              
             </div>
             <div class="comment-content">
               I recently visited <?= $name ?> and it was an incredible experience! The culture, the food, and the people were all amazing. I would highly recommend anyone to visit this beautiful country.
@@ -74,8 +79,10 @@ if (isset($_POST['send'])) {
                   <a href="http://creaticode.com/blog">Lorena Rojero</a>
                 </h6>
                 <span>35 minutes ago</span>
-                <i class="fa fa-reply"></i>
-                <i class="fa fa-heart"></i>
+                <div style="
+              right: 10px;
+              position: absolute;"><i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i></div>
               </div>
               <div class="comment-content">
                 I completely agree! I went to <?= $name ?> a few years ago and it was one of the best trips of my life. The architecture, the natural scenery, and the technology were all so fascinating. I would love to go back someday.
@@ -95,8 +102,10 @@ if (isset($_POST['send'])) {
                   <a href="http://creaticode.com/blog">Agustin Ortiz</a>
                 </h6>
                 <span>21 minutes ago</span>
-                <i class="fa fa-reply"></i>
-                <i class="fa fa-heart"></i>
+                <div style="
+              right: 10px;
+              position: absolute;"><i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i></div>
               </div>
               <div class="comment-content">
                 Yes, <?= $name ?> is truly a unique and wonderful place. I was particularly impressed by how clean and organized everything was, even in the bustling cities like <?= $titlePlace3 ?> . The attention to detail and the respect for tradition are also very admirable. I'm already planning my next trip back!
@@ -109,7 +118,7 @@ if (isset($_POST['send'])) {
       <?php
 
 
-      $sql = "SELECT name , comment, date FROM reviews";
+      $sql = "SELECT name , comment, date FROM reviews WHERE country='$name'";
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
@@ -142,8 +151,10 @@ if (isset($_POST['send'])) {
                         // Display the time elapsed
 
                         echo $time_elapsed . " minutes ago"; ?></span>
-                  <i class="fa fa-reply"></i>
-                  <i class="fa fa-heart"></i>
+                  <div style="
+              right: 10px;
+              position: absolute;"><i class="fa fa-reply"></i>
+              <i class="fa fa-heart"></i></div>
                 </div>
                 <div class="comment-content">
                   <?php echo $row['comment'] ?>

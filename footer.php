@@ -30,3 +30,55 @@
           <div></div>
         </div>
         <!-- copyright end -->
+        <!-- backToTopBtn start -->
+        <img onclick="topFunction()" id="backToTopBtn" title="Go to top" src="../pics/icons8-airplane2-64.png" alt="Back to Top" /> 
+        <style>
+          /* backToTopBtn start */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#backToTopBtn:hover {
+  transform: scale(1.05);
+  animation: wave 1.3s ease-in-out infinite;
+}
+/* backToTopBtn end */
+        </style>
+        <script>
+          // -----------------------back to top btn start--------------------------
+// Get the button
+let backToTopBtn = document.querySelector("#backToTopBtn");
+
+// When the user scrolls down 1000px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 1000 ||
+    document.documentElement.scrollTop > 1000
+  ) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+// -----------------------back to top btn end--------------------------
+        </script>
