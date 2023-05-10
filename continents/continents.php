@@ -75,7 +75,7 @@ include_once('../dependancies.php') ;
                                     <?= $description ?>
                                  </p>
 
-                            <button style="margin-left: 10%;">
+                            <button style="bottom: 60px;" class="button-to-details">
                                 <i class="fab fa-youtube"></i>
                                 <a class="nav-link" style="text-decoration:none; color: light; " href=<?php 
     $name_encoded = urlencode($name);
