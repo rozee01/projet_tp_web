@@ -1,18 +1,17 @@
-<?php 
-$country=$_GET['name'];
+<?php
+$country = $_GET['name'];
 //On doit savoir si la page concerne un pays deja validé ou un pays proposé pas encore validé (on prend cette information de l'url) 
-if ($_GET['demande']=="true"){
+if ($_GET['demande'] == "true") {
     require_once('../Repositories/DemandeDetailsRepository.php');
-$DetailsRepository = new DemandeDetailsRepository();
-require_once('../Repositories/DemandeTipsRepository.php');
-$TipsRepository = new DemandeTipsRepository();
-    
-    
+    $DetailsRepository = new DemandeDetailsRepository();
+    require_once('../Repositories/DemandeTipsRepository.php');
+    $TipsRepository = new DemandeTipsRepository();
 } else {
     require_once('../Repositories/CountryDetailsRepository.php');
-    $DetailsRepository = new CountryDetailsRepository();}
-    require_once('../Repositories/CountryTipsRepository.php');
-    $TipsRepository= new CountryTipsRepository();
+    $DetailsRepository = new CountryDetailsRepository();
+}
+require_once('../Repositories/CountryTipsRepository.php');
+$TipsRepository = new CountryTipsRepository();
 
 // Associer chaque element de la table CountryDetails a sa valeur dans la base de données selon le nom du pays 
 
@@ -36,18 +35,18 @@ foreach ($tips as $tip) {
     ${$tip} = $Tips["{$tip}"];
 }
 
- $path="../";
-	
-	?>
- 
+$path = "../";
+
+?>
+
 <html>
 
 <head>
     <title>let's visit <?= $country ?></title>
     <meta charset="UTF-8">
- <?php 
+    <?php
     include_once('../dependancies.php'); ?>
-  <link rel="stylesheet" href="../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="pays.css">
     <style>
         .background {
@@ -56,10 +55,9 @@ foreach ($tips as $tip) {
             background-repeat: no-repeat;
             background-position: center center;
             width: 100%;
-            height:850px;
+            height: 850px;
             margin-bottom: 180px;
         }
-        
     </style>
     <link rel="stylesheet" href="../comment_section/comment.css" />
 
@@ -220,7 +218,7 @@ foreach ($tips as $tip) {
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fas fa-thermometer-half"></i></div>
-                            <div class="info"><span>Climate</span><br><?= $climate?></div>
+                            <div class="info"><span>Climate</span><br><?= $climate ?></div>
                         </div>
                         <div class="fact">
                             <div class="circle"><i class="fas fa-plug"></i></div>
@@ -261,30 +259,41 @@ foreach ($tips as $tip) {
     <!--information start-->
     <div class="container" id="info">
         <div class="titree">
-            <h2>Flights </h2>
+            <h2>Flights <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/zeabctil.json" trigger="hover" colors="outline:#121331,primary:#4bb3fd,secondary:#ebe6ef" style="width:70px;height:70px ;padding-top: 20px;">
+                </lord-icon>
+            </h2>
         </div>
         <p><br><?= $flights ?>
         </p>
         <div class="titree">
-            <h2>Safety </h2>
+            <h2>Safety
+                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/cqgtrhpg.json" trigger="hover" colors="outline:#131432,primary:#606874,secondary:#4bb3fd,tertiary:#ebe6ef" style="width:80px;height:80px ;padding-top: 20px;">
+                </lord-icon>
+            </h2>
         </div>
         <p><br><?= $safety ?>
         </p>
         <div class="titree">
-            <h2>Budget </h2>
+            <h2>Budget
+                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/ptzvfshs.json" trigger="hover" colors="outline:#121331,primary:#f28ba8,secondary:#ffc738" style="width:80px;height:80px ;padding-top: 20px;">
+                </lord-icon>
+            </h2>
         </div>
         <p><br><?= $budget ?>
         </p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <!--information end-->
-    
+
 
     <!--video-->
     <div class="container" id="vid">
-    <h3>VIDEO</h3>
-    <iframe src=<?= $video ?> frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+        <h3>VIDEO</h3>
+        <iframe src=<?= $video ?> frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
     <!--video end-->
 
